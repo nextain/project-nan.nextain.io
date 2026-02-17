@@ -1,0 +1,28 @@
+# any-llm gateway config for local development
+# Copy to docker/config.local.yml and fill in your API keys
+
+database_url: "postgresql://gateway:gateway@postgres:5432/gateway"
+
+master_key: "dev-master-key-change-in-production"
+
+providers:
+  google_genai:
+    api_key: "${GEMINI_API_KEY}"
+  xai:
+    api_key: "${XAI_API_KEY}"
+  anthropic:
+    api_key: "${ANTHROPIC_API_KEY}"
+
+pricing:
+  google_genai:gemini-2.5-flash:
+    input_price_per_million: 0.15
+    output_price_per_million: 0.60
+  google_genai:gemini-2.5-pro:
+    input_price_per_million: 1.25
+    output_price_per_million: 10.00
+  xai:grok-3-mini:
+    input_price_per_million: 0.30
+    output_price_per_million: 0.50
+  anthropic:claude-sonnet-4-5-20250929:
+    input_price_per_million: 3.00
+    output_price_per_million: 15.00
