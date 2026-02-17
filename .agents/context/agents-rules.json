@@ -1,0 +1,101 @@
+{
+	"project_identity": {
+		"name": "lab.cafelua.com",
+		"nature": "Cafelua service portal — OAuth login, credit dashboard, gateway client",
+		"philosophy": "Thin web client for any-llm gateway. Auth + dashboard only.",
+		"domain": "lab.cafelua.com"
+	},
+	"architecture": {
+		"framework": "Next.js 16 (App Router)",
+		"language": "TypeScript",
+		"styling": "Tailwind CSS 4",
+		"deployment": "Vercel",
+		"backend": "Next.js API Routes (BFF pattern)",
+		"gateway": {
+			"url": "https://api.cafelua.com",
+			"auth": "Master Key → Virtual Key per user",
+			"protocol": "OpenAI-compatible REST (any-llm gateway)"
+		},
+		"auth": {
+			"providers": ["Google OAuth", "Kakao OAuth"],
+			"library": "NextAuth.js v5",
+			"token_flow": "OAuth → NextAuth session → gateway virtual key → JWT for desktop app"
+		}
+	},
+	"pages": {
+		"/": "Landing — login CTA",
+		"/login": "OAuth provider selection (Google, Kakao)",
+		"/dashboard": "Credit balance, usage history, account info",
+		"/settings": "Profile, API key management",
+		"/callback": "Desktop app deep link redirect (cafelua://auth?code=<token>)"
+	},
+	"coding_conventions": {
+		"language": "TypeScript (strict mode)",
+		"package_manager": "npm",
+		"formatter": "ESLint + Prettier (Next.js defaults)",
+		"naming": {
+			"files": "kebab-case",
+			"components": "PascalCase",
+			"functions": "camelCase",
+			"constants": "UPPER_SNAKE_CASE"
+		},
+		"imports": {
+			"alias": "@/*",
+			"order": ["react/next", "external", "internal", "relative"]
+		},
+		"comments": {
+			"language": "English for code, Korean for docs",
+			"rule": "Only where logic isn't self-evident"
+		}
+	},
+	"testing": {
+		"framework": "Vitest + React Testing Library",
+		"approach": "Integration-first TDD",
+		"tdd_phases": [
+			"RED: Write test for user flow",
+			"GREEN: Minimal implementation",
+			"REFACTOR: Clean while tests pass"
+		],
+		"structure": {
+			"unit": "src/**/__tests__/*.test.ts",
+			"integration": "tests/integration/*.test.ts",
+			"e2e": "tests/e2e/*.spec.ts"
+		}
+	},
+	"development_process": {
+		"cycle": "PLAN -> CHECK -> BUILD -> VERIFY -> CLEAN -> COMMIT",
+		"branch_strategy": {
+			"main": "Production (Vercel auto-deploy)",
+			"dev": "Integration branch",
+			"feature": "feature/<name>"
+		},
+		"commit_convention": {
+			"format": "<type>(<scope>): <description>",
+			"types": ["feat", "fix", "refactor", "test", "docs", "chore"],
+			"scopes": ["auth", "dashboard", "api", "ui", "config"],
+			"language": "English"
+		}
+	},
+	"context_management": {
+		"dual_directory": {
+			".agents": "AI-optimized (English, JSON/YAML, token-efficient)",
+			".users": "Human-readable (Korean, Markdown, detailed)"
+		},
+		"sot": ".agents/context/agents-rules.json is the Single Source of Truth",
+		"mirror_rule": "Changes to .agents/ must be reflected in .users/ and vice versa"
+	},
+	"ai_workflow": {
+		"response_language": "Korean",
+		"mandatory_pre_checks": [
+			"Read agents-rules.json before any work",
+			"Read development-cycle workflow before coding",
+			"TDD mandatory (integration first)"
+		],
+		"work_logs": {
+			"location": "work-logs/ (project-internal)",
+			"format": "YYYYMMDD-{number}-{topic}.md",
+			"folders": ["todo/", "doing/", "done/"],
+			"language": "Korean preferred"
+		}
+	}
+}

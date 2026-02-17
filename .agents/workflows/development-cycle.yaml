@@ -1,0 +1,49 @@
+# Development Cycle — lab.cafelua.com
+# Read this BEFORE any coding task.
+
+cycle:
+  - phase: PLAN
+    actions:
+      - Clarify requirements with user
+      - Identify affected files
+      - Check existing code for duplicates
+    output: "Clear scope and file list"
+
+  - phase: CHECK
+    actions:
+      - Search codebase for related patterns
+      - Read relevant files before modifying
+      - Verify no conflicting changes
+    output: "Understanding of current state"
+
+  - phase: BUILD
+    approach: TDD
+    actions:
+      - "RED: Write failing test for the feature/fix"
+      - "GREEN: Write minimal code to pass"
+      - "REFACTOR: Clean up while tests stay green"
+    rules:
+      - Never code without test first
+      - Integration tests preferred over unit tests
+      - No console.log — use structured patterns
+
+  - phase: VERIFY
+    actions:
+      - Run tests (npm test)
+      - Run dev server (npm run dev) and check manually
+      - Verify in browser if UI change
+    rules:
+      - Type check alone is NOT verification
+      - Actually run the app
+
+  - phase: CLEAN
+    actions:
+      - Remove unused imports/files
+      - Check for duplicate code
+      - Self-review all changes
+
+  - phase: COMMIT
+    actions:
+      - Stage specific files (no git add -A)
+      - "Commit: <type>(<scope>): <description>"
+      - Update work-logs if significant

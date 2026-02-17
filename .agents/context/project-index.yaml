@@ -1,0 +1,53 @@
+# lab.cafelua.com 프로젝트 인덱스
+version: "1.0"
+
+project:
+  name: lab.cafelua.com
+  type: web-app
+  owner: luke
+  org: cafelua
+
+# 컨텍스트 파일 인덱스
+contexts:
+  agents-rules:
+    path: .agents/context/agents-rules.json
+    mirror: .users/context/agents-rules.md
+    description: "Project rules (SoT)"
+    load: always
+
+# 워크플로우 인덱스
+workflows:
+  development-cycle:
+    path: .agents/workflows/development-cycle.yaml
+    mirror: .users/workflows/development-cycle.md
+    description: "PLAN → CHECK → BUILD → VERIFY → CLEAN → COMMIT"
+    load: before-coding
+
+# 관련 프로젝트 (참조용, 수정 금지)
+related_projects:
+  project-any-llm:
+    relation: backend-gateway
+    path: ../project-any-llm
+    note: "Reference only. Do NOT modify."
+  project-careti.ai-frontend:
+    relation: design-reference
+    path: ../project-careti.ai-frontend
+    note: "Reference for patterns. Do NOT modify."
+  cafelua-os:
+    relation: desktop-client
+    path: ../cafelua-os
+    note: "Desktop app that consumes lab.cafelua.com auth flow"
+
+# 미러링 규칙
+mirroring:
+  principle: "1:1 mirroring between .agents/ and .users/"
+  mappings:
+    - agents: .agents/context/agents-rules.json
+      users: .users/context/agents-rules.md
+    - agents: .agents/workflows/development-cycle.yaml
+      users: .users/workflows/development-cycle.md
+
+# 작업 로그
+work_logs:
+  location: work-logs/
+  format: "YYYYMMDD-{number}-{topic}.md"
