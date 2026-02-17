@@ -1,20 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
+import { ThemeProvider } from "@/components/providers/theme-provider";
+import { TooltipProvider } from "@/components/ui/tooltip";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
-  title: "Cafelua Lab",
-  description: "Cafelua AI Service Portal",
+  title: {
+    default: "Cafelua Lab",
+    template: "%s | Cafelua Lab",
+  },
+  description: "Cafelua AI Service Portal — Your Personal AI Desktop OS",
 };
 
 export default function RootLayout({
@@ -23,11 +18,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+    <html suppressHydrationWarning>
+      <body className="antialiased font-sans">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {process.env.NEXT_PUBLIC_LEMONSQUEEZY_STORE_ID ? (
+            <Script
+              src="https://app.lemonsqueezy.com/js/lemon.js"
+              strategy="afterInteractive"
+            />
+          ) : null}
+          <TooltipProvider>{children}</TooltipProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

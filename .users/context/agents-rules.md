@@ -21,6 +21,7 @@
 - URL: `https://api.cafelua.com`
 - 인증: Master Key → 사용자별 Virtual Key
 - 프로토콜: OpenAI-compatible REST (any-llm gateway)
+- 프로바이더 정책: **Gemini 우선 운영** (OpenAI는 추후 확장 예정)
 
 ### 인증 (Auth)
 - 프로바이더: Google OAuth, Discord OAuth
@@ -47,6 +48,7 @@
 - **상수명**: UPPER_SNAKE_CASE
 - **코드 주석**: 영어, 문서: 한국어
 - **임포트 별칭**: `@/*`
+- **장문 콘텐츠 규칙**: 사용자 노출 장문 본문은 `src/content/<section>/<locale>/*.md`에 언어별로 분리하고, 페이지/컴포넌트에서 삽입 렌더링한다. TS/TSX에 장문 하드코딩 금지.
 
 ## 테스팅
 

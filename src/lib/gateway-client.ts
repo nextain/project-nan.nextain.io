@@ -32,6 +32,16 @@ export interface GatewayKey {
   metadata: Record<string, unknown>;
 }
 
+export interface GatewayPricing {
+  id?: string;
+  model?: string;
+  provider?: string;
+  input_price_per_million?: number;
+  output_price_per_million?: number;
+  cached_input_price_per_million?: number | null;
+  [key: string]: unknown;
+}
+
 export interface UsageLog {
   id: string;
   user_id: string | null;
@@ -143,6 +153,50 @@ export async function createVirtualKey(
   });
 }
 
+export async function listKeys(userId: string): Promise<GatewayKey[]> {
+  const res = await gw(`/v1/keys?user_id=${encodeURIComponent(userId)}`);
+  if (!res.ok) {
+    const body = await res.text();
+    throw new Error(`Gateway ${res.status}: ${body}`);
+  }
+
+  const payload = (await res.json()) as unknown;
+  if (Array.isArray(payload)) return payload as GatewayKey[];
+
+  if (payload && typeof payload === "object") {
+    const obj = payload as { data?: unknown; items?: unknown };
+    if (Array.isArray(obj.data)) return obj.data as GatewayKey[];
+    if (Array.isArray(obj.items)) return obj.items as GatewayKey[];
+  }
+
+  return [];
+}
+
+export async function isKeyOwnedByUser(userId: string, keyId: string): Promise<boolean> {
+  const keys = await listKeys(userId);
+  return keys.some((key) => key.id === keyId);
+}
+
+export async function revokeKey(keyId: string): Promise<void> {
+  const res = await gw(`/v1/keys/${encodeURIComponent(keyId)}`, {
+    method: "DELETE",
+  });
+  if (!res.ok) {
+    const body = await res.text();
+    throw new Error(`Gateway ${res.status}: ${body}`);
+  }
+}
+
+export async function updateKey(
+  keyId: string,
+  payload: Record<string, unknown>,
+): Promise<GatewayKey> {
+  return gwJson<GatewayKey>(`/v1/keys/${encodeURIComponent(keyId)}`, {
+    method: "PATCH",
+    body: JSON.stringify(payload),
+  });
+}
+
 // --- Usage ---
 
 export async function getUserUsage(
@@ -155,10 +209,52 @@ export async function getUserUsage(
   );
 }
 
+// --- Balance ---
+
+export interface BalanceData {
+  userId: string;
+  balance: number; // micro-dollars (credits * 100 * 1000)
+}
+
+export interface BalanceResponse {
+  success: boolean;
+  data: BalanceData;
+}
+
+/**
+ * Get user's remaining credit balance.
+ * Returns balance in micro-dollars. To get credits: balance / 100_000
+ */
+export async function getBalance(userId: string): Promise<BalanceData> {
+  const resp = await gwJson<BalanceResponse>(
+    `/v1/profile/balance?user=${encodeURIComponent(userId)}`,
+  );
+  return resp.data;
+}
+
 // --- Budgets ---
 
 export async function getBudget(budgetId: string): Promise<GatewayBudget> {
   return gwJson<GatewayBudget>(
     `/v1/budgets/${encodeURIComponent(budgetId)}`,
   );
+}
+
+export async function getModelPricing(): Promise<GatewayPricing[]> {
+  const res = await gw("/v1/pricing");
+  if (!res.ok) {
+    const body = await res.text();
+    throw new Error(`Gateway ${res.status}: ${body}`);
+  }
+
+  const payload = (await res.json()) as unknown;
+  if (Array.isArray(payload)) return payload as GatewayPricing[];
+
+  if (payload && typeof payload === "object") {
+    const obj = payload as { data?: unknown; items?: unknown };
+    if (Array.isArray(obj.data)) return obj.data as GatewayPricing[];
+    if (Array.isArray(obj.items)) return obj.items as GatewayPricing[];
+  }
+
+  return [];
 }

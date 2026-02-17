@@ -1,33 +1,62 @@
 {
 	"project_identity": {
 		"name": "lab.cafelua.com",
-		"nature": "Cafelua service portal — OAuth login, credit dashboard, gateway client",
-		"philosophy": "Thin web client for any-llm gateway. Auth + dashboard only.",
-		"domain": "lab.cafelua.com"
+		"nature": "Cafelua service portal — OAuth login, credit dashboard, usage analytics, key management, billing",
+		"philosophy": "Thin web client for any-llm gateway. Auth + dashboard + billing UI only.",
+		"domain": "lab.cafelua.com",
+		"product": "Cafelua OS — personal AI desktop OS with companion Alpha, VRM avatar, TTS/STT, 8 themes"
 	},
 	"architecture": {
-		"framework": "Next.js 16 (App Router)",
+		"framework": "Next.js 16 (App Router, Server Components)",
 		"language": "TypeScript",
-		"styling": "Tailwind CSS 4",
+		"styling": "Tailwind CSS 4 + shadcn/ui (new-york style, Cafelua brown theme)",
 		"deployment": "Vercel",
-		"backend": "Next.js API Routes (BFF pattern)",
+		"backend": "Next.js API Routes (BFF pattern — master key server-only)",
 		"gateway": {
-			"url": "https://api.cafelua.com",
-			"auth": "Master Key → Virtual Key per user",
-			"protocol": "OpenAI-compatible REST (any-llm gateway)"
+			"url_env": "GATEWAY_URL",
+			"auth": "Master Key (X-AnyLLM-Key header) for BFF → gateway calls",
+			"protocol": "OpenAI-compatible REST (any-llm gateway)",
+			"credit_system": "credits * 100 * 1000 = micro-dollars (balance endpoint)"
 		},
 		"auth": {
 			"providers": ["Google OAuth", "Discord OAuth"],
-			"library": "NextAuth.js v5",
-			"token_flow": "OAuth → NextAuth session → gateway virtual key → JWT for desktop app"
+			"library": "NextAuth.js v5 (next-auth@5.0.0-beta.30)",
+			"flow": "OAuth → NextAuth session → gateway socialLogin → JWT + credits provisioned"
+		},
+		"i18n": {
+			"strategy": "URL-based [lang] segment",
+			"locales": ["ko", "en"],
+			"default": "ko",
+			"detection": "cookie → Accept-Language → default",
+			"dictionary": "src/i18n/dictionaries/{locale}.ts"
+		},
+		"ui_components": {
+			"library": "shadcn/ui (radix-ui primitives)",
+			"icons": "lucide-react",
+			"charts": "recharts",
+			"theme": "next-themes (light + dark)",
+			"payments": "LemonSqueezy (prepared, Coming Soon when env not set)"
 		}
 	},
-	"pages": {
-		"/": "Landing — login CTA",
-		"/login": "OAuth provider selection (Google, Discord)",
-		"/dashboard": "Credit balance, usage history, account info",
-		"/settings": "Profile, API key management",
-		"/callback": "Desktop app deep link redirect (cafelua://auth?code=<token>)"
+	"route_groups": {
+		"(public)": {
+			"layout": "Header + Footer",
+			"pages": ["/", "/terms", "/privacy", "/refund", "/contact"]
+		},
+		"(protected)": {
+			"layout": "AuthHeader + ProtectedSidebar + MobileNav",
+			"auth_required": true,
+			"pages": ["/dashboard", "/usage", "/logs", "/keys", "/settings", "/billing"]
+		},
+		"(auth)": {
+			"layout": "Centered card",
+			"pages": ["/login", "/callback"]
+		},
+		"api": {
+			"gateway_proxy": ["/api/gateway/balance", "/api/gateway/keys", "/api/gateway/logs", "/api/gateway/usage", "/api/gateway/pricing", "/api/gateway/desktop-key"],
+			"auth": ["/api/auth/[...nextauth]"],
+			"webhooks": ["/api/webhooks/lemonsqueezy"]
+		}
 	},
 	"coding_conventions": {
 		"language": "TypeScript (strict mode)",
@@ -46,6 +75,9 @@
 		"comments": {
 			"language": "English for code, Korean for docs",
 			"rule": "Only where logic isn't self-evident"
+		},
+		"content": {
+			"long_form_copy": "Keep long user-facing text in locale-specific markdown files under src/content/<section>/<locale>/*.md and render it in pages/components."
 		}
 	},
 	"testing": {
@@ -72,7 +104,7 @@
 		"commit_convention": {
 			"format": "<type>(<scope>): <description>",
 			"types": ["feat", "fix", "refactor", "test", "docs", "chore"],
-			"scopes": ["auth", "dashboard", "api", "ui", "config"],
+			"scopes": ["auth", "dashboard", "usage", "logs", "keys", "billing", "api", "ui", "i18n", "config"],
 			"language": "English"
 		}
 	},

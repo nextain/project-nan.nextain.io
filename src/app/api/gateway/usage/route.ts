@@ -15,7 +15,13 @@ export async function GET(request: Request) {
   const skip = Number(searchParams.get("skip") ?? 0);
   const limit = Math.min(Number(searchParams.get("limit") ?? 50), 100);
 
-  const usage = await getUserUsage(session.gwUserId, skip, limit);
-
-  return NextResponse.json(usage);
+  try {
+    const usage = await getUserUsage(session.gwUserId, skip, limit);
+    return NextResponse.json(usage);
+  } catch {
+    return NextResponse.json(
+      { error: "Failed to fetch usage" },
+      { status: 500 },
+    );
+  }
 }

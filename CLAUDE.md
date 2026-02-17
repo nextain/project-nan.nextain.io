@@ -28,24 +28,79 @@ Cafelua 서비스 포털. OAuth 로그인 + 크레딧 대시보드 + any-llm gat
 
 ```
 src/
-├── app/                # Next.js App Router pages
-│   ├── page.tsx        # Landing
-│   ├── login/          # OAuth login
-│   ├── dashboard/      # Credit dashboard
-│   ├── settings/       # Profile, API keys
-│   ├── callback/       # Desktop deep link redirect
-│   └── api/            # API Routes (BFF)
-│       └── auth/       # NextAuth + gateway sync
-├── components/         # Shared UI components
-├── lib/                # Utilities, gateway client, types
-└── styles/             # Global styles
+├── app/
+│   ├── layout.tsx              # 루트 레이아웃 (ThemeProvider, LemonSqueezy)
+│   ├── [lang]/                 # i18n 동적 세그먼트 (ko, en)
+│   │   ├── layout.tsx          # 언어 레이아웃 (LocaleProvider)
+│   │   ├── (public)/           # 퍼블릭 (Header + Footer)
+│   │   │   ├── layout.tsx
+│   │   │   ├── page.tsx        # 홈 (Hero, Features, Pricing, FAQ)
+│   │   │   ├── terms/          # 이용약관
+│   │   │   ├── privacy/        # 개인정보처리방침
+│   │   │   ├── refund/         # 환불정책
+│   │   │   └── contact/        # 문의
+│   │   ├── (protected)/        # 인증 필요 (AuthHeader + Sidebar)
+│   │   │   ├── layout.tsx
+│   │   │   ├── dashboard/      # 크레딧 잔액 + 요약 + 빠른 링크
+│   │   │   ├── usage/          # 사용량 차트 (Recharts, 7/30/90일)
+│   │   │   ├── logs/           # 로그 테이블 (필터 + 페이지네이션)
+│   │   │   ├── keys/           # API 키 관리 (생성/삭제)
+│   │   │   ├── settings/       # 프로필 + 데스크톱 연결
+│   │   │   └── billing/        # 플랜 비교 + LemonSqueezy 준비
+│   │   └── (auth)/             # 인증 관련 (중앙 카드)
+│   │       ├── layout.tsx
+│   │       ├── login/          # OAuth (Google, Discord)
+│   │       └── callback/       # 데스크톱 딥링크 리다이렉트
+│   └── api/                    # BFF API Routes
+│       ├── auth/               # NextAuth v5
+│       ├── gateway/            # Gateway 프록시
+│       │   ├── balance/        # GET — 크레딧 잔액
+│       │   ├── keys/           # GET/POST — 키 목록/생성
+│       │   ├── keys/[keyId]/   # DELETE — 키 삭제
+│       │   ├── logs/           # GET — 사용 로그
+│       │   ├── usage/          # GET — 사용량 통계
+│       │   ├── pricing/        # GET — 모델 가격
+│       │   └── desktop-key/    # POST — 데스크톱 키 발급
+│       └── webhooks/
+│           └── lemonsqueezy/   # POST — 결제 웹훅
+├── components/
+│   ├── ui/                     # shadcn/ui (button, card, badge 등)
+│   ├── layout/                 # header, footer, auth-header, sidebar, mobile-nav
+│   ├── home/                   # hero, features, pricing, faq, section-reveal
+│   ├── usage/                  # requests-chart, tokens-chart, spend-chart
+│   ├── logs/                   # logs-table
+│   └── providers/              # theme-provider, locale-provider, query-provider
+├── i18n/
+│   ├── config.ts               # SUPPORTED_LOCALES (ko, en), DEFAULT_LOCALE
+│   └── dictionaries/           # ko.ts, en.ts, types.ts, index.ts
+├── content/                    # 마크다운 콘텐츠 (FAQ, 법적 문서)
+│   ├── home/{lang}/faq.md
+│   └── legal/{lang}/*.md
+├── lib/
+│   ├── auth.ts                 # NextAuth v5 설정 (Google + Discord)
+│   ├── gateway-client.ts       # Gateway REST 클라이언트 (서버 전용)
+│   ├── lemonsqueezy.ts         # LemonSqueezy 체크아웃 빌더
+│   ├── home-docs.ts            # FAQ 마크다운 파서
+│   ├── legal-docs.ts           # 법적 문서 마크다운 파서
+│   └── utils.ts                # cn() 유틸리티
+└── middleware.ts               # locale 감지 + auth 보호 + 리다이렉트
 ```
 
 ## 핵심 원칙
 
 1. **얇은 클라이언트** — 실제 로직은 gateway(any-llm)에, 여기는 UI만
-2. **BFF 패턴** — API Routes로 gateway 프록시 (클라이언트에 키 노출 방지)
-3. **데스크톱 연동** — `/callback` 페이지로 cafelua-os에 토큰 전달
+2. **BFF 패턴** — API Routes로 gateway 프록시 (클라이언트에 마스터키 노출 방지)
+3. **데스크톱 연동** — `/callback` 페이지로 cafelua-os에 키 전달
+4. **i18n** — URL 기반 `[lang]` 세그먼트 (ko, en)
+
+## 기술 스택
+
+- **Next.js 16** (App Router, Server Components)
+- **NextAuth v5** (Google + Discord OAuth)
+- **shadcn/ui** + Tailwind CSS 4 (Cafelua 브라운 테마)
+- **Recharts** — 사용량 차트
+- **next-themes** — 다크/라이트 모드
+- **LemonSqueezy** — 결제 (준비 중, env 미설정 시 Coming Soon)
 
 ## 컨벤션 (요약)
 

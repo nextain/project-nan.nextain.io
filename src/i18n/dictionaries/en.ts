@@ -1,0 +1,265 @@
+import type { Dictionary } from "./types";
+
+const en: Dictionary = {
+  locale: "en",
+  meta: {
+    title: "Cafelua Lab",
+    description: "Cafelua OS Service Portal — Personal AI operating system with Alpha",
+  },
+  common: {
+    loading: "Loading...",
+    loadingShort: "Loading...",
+    error: "An error occurred",
+    save: "Save",
+    cancel: "Cancel",
+    delete: "Delete",
+    confirm: "Confirm",
+    copy: "Copy",
+    copied: "Copied",
+    comingSoon: "Coming Soon",
+    backTo: "Back",
+    prev: "Prev",
+    next: "Next",
+    page: "Page",
+  },
+  header: {
+    home: "Home",
+    pricing: "Pricing",
+    faq: "FAQ",
+    download: "Download",
+    login: "Login",
+    dashboard: "Dashboard",
+    toggleMenu: "Toggle menu",
+  },
+  footer: {
+    brand: "Cafelua",
+    tagline: "Where Technology meets Emotion",
+    links: {
+      privacy: "Privacy Policy",
+      terms: "Terms of Service",
+      refund: "Refund Policy",
+      contact: "Contact",
+    },
+    copyright: "© 2025 Caretive Inc. All rights reserved.",
+  },
+  auth: {
+    loginTitle: "Login",
+    loginDescription: "Sign in to Cafelua Lab",
+    googleLogin: "Continue with Google",
+    discordLogin: "Continue with Discord",
+    logout: "Logout",
+    callbackRedirecting: "Redirecting to desktop app...",
+    callbackManualPrefix: "If it does not open automatically, ",
+    callbackManualLink: "click here",
+    callbackManualSuffix: ".",
+  },
+  home: {
+    hero: {
+      title: "Where Technology\nmeets Emotion",
+      subtitle:
+        "A personal AI operating system where Alpha welcomes you at boot. VRM avatar, Gemini-first voice interaction, and real tool execution in one desktop.",
+      cta: "Get Started Free",
+      secondaryCta: "Download",
+    },
+    features: {
+      title: "What makes Cafelua OS special",
+      subtitle: "A new AI experience where technology meets emotion",
+      items: {
+        companion: {
+          title: "AI Companion Alpha",
+          description:
+            "A living VRM avatar in your workspace. More than chat, Alpha stays with your daily workflow.",
+        },
+        multiProvider: {
+          title: "Gemini-first Service",
+          description:
+            "We currently focus on Gemini for stable service, with unified account, credits, and logs.",
+        },
+        voice: {
+          title: "Voice Conversations",
+          description:
+            "Natural voice interaction with TTS/STT. Ask by voice, get spoken responses.",
+        },
+        themes: {
+          title: "8 Themes",
+          description:
+            "Switch between cafe, forest, ocean, space, and more to match your mood.",
+        },
+        tools: {
+          title: "Tool Execution",
+          description:
+            "Alpha can trigger file, terminal, and search tools to complete practical tasks.",
+        },
+        desktop: {
+          title: "Desktop OS",
+          description:
+            "A deployable AI OS on top of Bazzite. Boot from USB and start quickly.",
+        },
+      },
+    },
+    pricing: {
+      title: "Simple Pricing",
+      subtitle: "Pay only for what you need",
+      policyNote: "Please review billing, refund, and policy documents below.",
+      free: {
+        name: "FREE",
+        price: "$0",
+        period: "forever",
+        description: "Start with just a sign-up",
+        features: [
+          "20 credits on sign-up",
+          "10 credits monthly refill",
+          "Gemini models",
+          "Basic voice chat",
+          "Community support",
+        ],
+        cta: "Start Free",
+      },
+      basic: {
+        name: "BASIC",
+        price: "$10",
+        period: "mo",
+        description: "For those who want more",
+        features: [
+          "100 credits monthly",
+          "Gemini models",
+          "High-quality voice chat",
+          "Priority support",
+          "Premium themes",
+        ],
+        cta: "Upgrade",
+      },
+    },
+    faq: {
+      title: "Frequently Asked Questions",
+    },
+  },
+  sidebar: {
+    dashboard: "Dashboard",
+    usage: "Usage",
+    logs: "Logs",
+    keys: "API Keys",
+    settings: "Settings",
+    billing: "Billing",
+  },
+  dashboard: {
+    title: "Dashboard",
+    creditBalance: "Credit Balance",
+    totalRequests: "Total Requests",
+    totalTokens: "Total Tokens",
+    totalSpend: "Total Spend",
+    currentPeriod: "Current Period",
+    quickLinks: "Quick Links",
+    statusActive: "Active",
+    statusBlocked: "Blocked",
+  },
+  usage: {
+    title: "Usage",
+    period: {
+      days7: "7 days",
+      days30: "30 days",
+      days90: "90 days",
+    },
+    requestsPerDay: "Requests / Day",
+    tokensPerDay: "Tokens / Day",
+    spendPerDay: "Spend / Day",
+    noData: "No data for the selected period",
+  },
+  logs: {
+    title: "Logs",
+    all: "All",
+    filterStatus: "Status Filter",
+    filterModel: "Model Filter",
+    columns: {
+      time: "Time",
+      status: "Status",
+      model: "Model",
+      tokens: "Tokens",
+      cost: "Cost",
+    },
+    details: {
+      id: "Log ID",
+      endpoint: "Endpoint",
+      provider: "Provider",
+      promptTokens: "Prompt Tokens",
+      completionTokens: "Completion Tokens",
+      error: "Error",
+    },
+    noLogs: "No logs yet",
+    expandDetails: "Show details",
+  },
+  keys: {
+    title: "API Keys",
+    createKey: "Create Key",
+    keyName: "Key Name",
+    keyNamePlaceholder: "e.g. my-desktop-key",
+    expires: "Expires",
+    noExpiry: "No expiry",
+    days30: "30 days",
+    days90: "90 days",
+    days365: "1 year",
+    columns: {
+      name: "Name",
+      status: "Status",
+      created: "Created",
+      actions: "Actions",
+    },
+    noKeys: "No keys created yet",
+    deleteConfirm: "Are you sure you want to delete this key?",
+    keyCreated: "Key created",
+    keyCreatedDescription:
+      "This key will only be shown once. Store it in a safe place.",
+    active: "Active",
+    revoked: "Revoked",
+    unnamed: "unnamed-key",
+    forbiddenAction: "You do not have permission for this key.",
+  },
+  settings: {
+    title: "Settings",
+    profile: {
+      title: "Profile",
+      name: "Name",
+      email: "Email",
+      avatar: "Avatar",
+      provider: "Login Provider",
+      gatewayId: "Gateway ID",
+      budgetId: "Budget ID",
+    },
+    connectedAccounts: {
+      title: "Connected Accounts",
+      google: "Google",
+      discord: "Discord",
+    },
+    desktopApp: {
+      title: "Desktop App Connection",
+      description:
+        "Connect your Cafelua OS desktop app with this account.",
+      issueKey: "Issue Connection Key",
+    },
+    appearance: {
+      title: "Appearance",
+      theme: "Theme",
+      themeLight: "Light",
+      themeDark: "Dark",
+      themeSystem: "System",
+      language: "Language",
+    },
+  },
+  billing: {
+    title: "Billing",
+    currentPlan: "Current Plan",
+    creditBalance: "Credit Balance",
+    periodUsage: "Period Usage",
+    comparePlans: "Compare Plans",
+    upgrade: "Upgrade",
+    free: "FREE",
+    basic: "BASIC",
+    currentBadge: "Current",
+    freeFeatures: ["20 signup credits", "Monthly refill minimum 10", "Gemini models access"],
+    basicFeatures: ["100 monthly credits", "Priority support", "Premium voice/themes"],
+    lemonNotice: "Payments are processed by LemonSqueezy. Please review billing and refund policies.",
+    pricingModelsSynced: "Pricing models synced",
+  },
+};
+
+export default en;
