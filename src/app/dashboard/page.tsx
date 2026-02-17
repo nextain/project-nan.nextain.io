@@ -8,10 +8,17 @@ export default async function DashboardPage() {
   const session = await auth();
   if (!session?.gwUserId) redirect("/login");
 
-  const [user, usage] = await Promise.all([
-    getUser(session.gwUserId),
-    getUserUsage(session.gwUserId, 0, 20),
-  ]);
+  let user = null;
+  let usage: Awaited<ReturnType<typeof getUserUsage>> = [];
+
+  try {
+    [user, usage] = await Promise.all([
+      getUser(session.gwUserId),
+      getUserUsage(session.gwUserId, 0, 20),
+    ]);
+  } catch {
+    // Gateway not available yet — show empty state
+  }
 
   return (
     <main className="min-h-screen p-8 max-w-3xl mx-auto">

@@ -1,7 +1,7 @@
 import NextAuth from "next-auth";
 import Google from "next-auth/providers/google";
 import Discord from "next-auth/providers/discord";
-import { getOrCreateUser, createVirtualKey } from "./gateway-client";
+import { socialLogin, createVirtualKey } from "./gateway-client";
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
   providers: [Google, Discord],
@@ -13,10 +13,13 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       if (!account || !user.email) return false;
 
       try {
-        const gwUserId = `${account.provider}:${account.providerAccountId}`;
-        const freeBudgetId = process.env.FREE_BUDGET_ID;
-
-        await getOrCreateUser(gwUserId, user.name ?? user.email, freeBudgetId);
+        // Gateway social login — creates user + FREE plan credits on first login
+        await socialLogin(
+          account.provider,
+          user.email,
+          user.name ?? undefined,
+          user.image ?? undefined,
+        );
       } catch {
         // Gateway might be down — allow login anyway, sync later
       }

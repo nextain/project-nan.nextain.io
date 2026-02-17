@@ -83,19 +83,37 @@ async function gwJson<T>(path: string, options: RequestInit = {}): Promise<T> {
   return res.json() as Promise<T>;
 }
 
+// --- Types (auth) ---
+
+export interface SocialLoginResponse {
+  tokens: {
+    access_token: string;
+    access_token_expires_at: string;
+    refresh_token: string;
+    refresh_token_expires_at: string;
+  };
+}
+
 // --- Users ---
 
-export async function createUser(
-  userId: string,
-  alias?: string,
-  budgetId?: string,
-): Promise<GatewayUser> {
-  return gwJson<GatewayUser>("/v1/users", {
+/**
+ * Social login via gateway — creates user + FREE plan credits on first login.
+ * Returns JWT tokens (access + refresh).
+ */
+export async function socialLogin(
+  provider: string,
+  email: string,
+  name?: string,
+  avatarUrl?: string,
+): Promise<SocialLoginResponse> {
+  return gwJson<SocialLoginResponse>("/v1/auth/login", {
     method: "POST",
     body: JSON.stringify({
-      user_id: userId,
-      alias,
-      budget_id: budgetId,
+      provider,
+      email,
+      name,
+      avatar_url: avatarUrl,
+      device_type: "web",
     }),
   });
 }
@@ -108,16 +126,6 @@ export async function getUser(userId: string): Promise<GatewayUser | null> {
     throw new Error(`Gateway ${res.status}: ${body}`);
   }
   return res.json() as Promise<GatewayUser>;
-}
-
-export async function getOrCreateUser(
-  userId: string,
-  alias?: string,
-  budgetId?: string,
-): Promise<GatewayUser> {
-  const existing = await getUser(userId);
-  if (existing) return existing;
-  return createUser(userId, alias, budgetId);
 }
 
 // --- Keys ---
