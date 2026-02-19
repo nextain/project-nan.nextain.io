@@ -16,6 +16,7 @@ export function Header() {
   const navLinks = [
     { href: `/${lang}#pricing`, label: dict.header.pricing },
     { href: `/${lang}#faq`, label: dict.header.faq },
+    { href: `/${lang}/manual`, label: dict.header.manual },
   ];
 
   return (

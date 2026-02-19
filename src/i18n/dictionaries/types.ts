@@ -30,6 +30,7 @@ export interface Dictionary {
     login: string;
     dashboard: string;
     toggleMenu: string;
+    manual: string;
   };
   footer: {
     brand: string;
@@ -203,6 +204,26 @@ export interface Dictionary {
       themeDark: string;
       themeSystem: string;
       language: string;
+    };
+  };
+  manual: {
+    title: string;
+    subtitle: string;
+    toc: string;
+    prev: string;
+    next: string;
+    backToToc: string;
+    sections: {
+      gettingStarted: string;
+      mainScreen: string;
+      chat: string;
+      history: string;
+      progress: string;
+      skills: string;
+      settings: string;
+      tools: string;
+      lab: string;
+      troubleshooting: string;
     };
   };
   billing: {

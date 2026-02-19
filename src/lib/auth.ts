@@ -30,8 +30,9 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
             Buffer.from(response.tokens.access_token.split(".")[1], "base64url").toString(),
           );
           token.gwUserId = payload.sub;
-        } catch {
+        } catch (err) {
           // Gateway might be down — fallback to provider:accountId
+          console.error("[auth] socialLogin failed:", err instanceof Error ? err.message : String(err));
           token.gwUserId = `${account.provider}:${account.providerAccountId}`;
         }
       }
