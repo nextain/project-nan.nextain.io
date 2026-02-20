@@ -36,9 +36,12 @@ Cafelua OS is 100% compatible with the OpenClaw ecosystem. There are three ways 
 Explain what you want in the chat, and AI 아바타 will write the code and create the skill for you.
 > "Build a skill that fetches the current exchange rate and save it to `~/.cafelua/skills/exchange/skill.json`."
 
-### 2. Install from Github / Online (OpenClaw Way)
-You can use the Terminal (`execute_command`) tool to install OpenClaw plugins directly.
+### 2. Install from Clawhub (OpenClaw Way)
+You can use the Terminal (`execute_command`) tool to install plugins directly from **[Clawhub.ai](https://clawhub.ai)**, the official OpenClaw skill registry containing over 5,700 skills.
+
 > "Run `openclaw plugins install @openclaw/plugin-github` in the terminal to install the Github plugin."
+
+⚠️ **Security Warning:** Skills downloaded from Clawhub or other online sources are written by third parties. Before installing, always ask the AI to **"Review this skill's code for any security risks (like deleting files or stealing personal info) before proceeding."**
 
 ### 3. Manual Addition
 1. Create a skill manifest at `~/.cafelua/skills/<skill-name>/skill.json`

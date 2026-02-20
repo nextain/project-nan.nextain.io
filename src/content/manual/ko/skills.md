@@ -36,9 +36,12 @@ Cafelua OS는 OpenClaw 생태계와 100% 호환됩니다. 스킬을 추가하는
 채팅창에서 AI 아바타에게 원하는 기능을 설명하면, 즉석에서 스킬을 코딩하여 추가해 줍니다.
 > "특정 웹사이트의 환율을 가져오는 스킬을 만들어줘. 파일은 `~/.cafelua/skills/exchange/skill.json`에 저장해."
 
-### 2. 온라인 / Github에서 설치하기 (OpenClaw 방식)
-명령어 실행(Terminal) 도구를 통해 OpenClaw의 플러그인을 그대로 설치할 수 있습니다.
+### 2. Clawhub (공식 스토어)에서 설치하기 (OpenClaw 방식)
+명령어 실행(Terminal) 도구를 통해 OpenClaw의 공식 스킬 레지스트리인 **[Clawhub.ai](https://clawhub.ai)**(5,700+개 스킬 보유)에서 플러그인을 그대로 설치할 수 있습니다.
+
 > "터미널에서 `openclaw plugins install @openclaw/plugin-github` 명령어를 실행해서 깃허브 플러그인을 설치해줘."
+
+⚠️ **보안 주의:** Clawhub 등 온라인에서 가져온 스킬은 제3자가 작성한 코드입니다. 설치 전 반드시 AI에게 **"이 스킬 코드를 먼저 읽고 보안상 위험한 동작(파일 삭제, 개인정보 탈취 등)을 하는지 검토해줘"**라고 지시하여 안전을 확인하세요.
 
 ### 3. 수동 추가
 1. `~/.cafelua/skills/<스킬명>/skill.json` 경로에 스킬 매니페스트를 직접 작성합니다.
