@@ -52,6 +52,21 @@ Manage API keys for desktop apps and external services:
 | Credits | 20 (on signup) | 100/mo |
 | Features | Basic | Full |
 
+## Integrations
+
+Link your lab.cafelua.com account with external messengers to chat with the AI avatar from anywhere.
+
+### Discord
+- Automatically linked when you sign in with Discord
+- Find the bot invite link on **Settings > Integrations**
+- Chat via @mention or DM in your server
+- Credits deducted from your Lab account
+
+### Google Chat
+- Available when signed in with Google
+- Chat via Google Chat after Workspace app registration
+- Credits deducted from your Lab account
+
 ## Settings
 
 - Profile information

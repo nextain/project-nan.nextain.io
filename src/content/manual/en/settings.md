@@ -101,6 +101,14 @@ Manage the system control permissions available to the AI avatar.
 - **Channel Management**: Check the status of connected messenger channels and control integration with external services.
 - (Detailed control is done in the Channels tab.)
 
+## Integrations
+
+Manage external messenger integrations on the **Settings > Integrations** page.
+
+- **Discord Integration**: Automatically linked when you sign in with Discord. Add the bot to your server via the invite link to chat with the AI through mentions or DMs.
+- **Google Chat Integration**: Chat with the AI through Google Chat when signed in with Google.
+- Connection status (connected/not connected) is shown as badges.
+
 ## Device & Wake Word
 
 ![Device Settings](settings-device.png)
