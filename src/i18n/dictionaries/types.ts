@@ -205,6 +205,27 @@ export interface Dictionary {
       themeSystem: string;
       language: string;
     };
+    integrations: {
+      title: string;
+      description: string;
+      discord: {
+        title: string;
+        connected: string;
+        notConnected: string;
+        connectedHint: string;
+        inviteBot: string;
+        inviteBotDescription: string;
+        howToUse: string;
+      };
+      googleChat: {
+        title: string;
+        connected: string;
+        notConnected: string;
+        connectedHint: string;
+        howToUse: string;
+      };
+      viewGuide: string;
+    };
   };
   manual: {
     title: string;
@@ -214,6 +235,7 @@ export interface Dictionary {
     next: string;
     backToToc: string;
     sections: {
+      install: string;
       gettingStarted: string;
       mainScreen: string;
       chat: string;

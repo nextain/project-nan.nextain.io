@@ -24,6 +24,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
             user.email,
             user.name ?? undefined,
             user.image ?? undefined,
+            account.providerAccountId,
           );
           // Extract gateway UUID from JWT access_token
           const payload = JSON.parse(
@@ -40,6 +41,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
     },
     async session({ session, token }) {
       session.gwUserId = token.gwUserId as string;
+      session.provider = token.provider as string;
       return session;
     },
   },

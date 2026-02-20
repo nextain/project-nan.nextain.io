@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useDictionary } from "@/components/providers/locale-provider";
-import { Coffee } from "lucide-react";
+import { CafeluaLogo } from "@/components/ui/cafelua-logo";
 
 export function Footer() {
   const dict = useDictionary();
@@ -15,7 +15,7 @@ export function Footer() {
           {/* Brand */}
           <div className="flex flex-col items-center gap-2 md:items-start">
             <div className="flex items-center gap-2">
-              <Coffee className="h-5 w-5 text-primary" />
+              <CafeluaLogo className="h-6 w-6" />
               <span className="font-bold">{dict.footer.brand}</span>
             </div>
             <p className="text-sm text-muted-foreground italic">

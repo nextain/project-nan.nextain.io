@@ -33,7 +33,7 @@ const ko: Dictionary = {
     manual: "사용법",
   },
   footer: {
-    brand: "Cafelua",
+    brand: "Cafelua Lab",
     tagline: "Where Technology meets Emotion",
     links: {
       privacy: "개인정보처리방침",
@@ -237,6 +237,27 @@ const ko: Dictionary = {
       themeDark: "다크",
       themeSystem: "시스템",
       language: "언어",
+    },
+    integrations: {
+      title: "서비스 연동",
+      description: "Discord, Google Chat 등 외부 서비스에서 알파와 대화할 수 있습니다.",
+      discord: {
+        title: "Discord",
+        connected: "연동됨",
+        notConnected: "미연동",
+        connectedHint: "디스코드로 로그인하셨다면 이미 연동되어 있습니다.",
+        inviteBot: "봇 서버에 추가",
+        inviteBotDescription: "이 봇을 서버에 추가하면 @알파 멘션이나 DM으로 대화할 수 있습니다.",
+        howToUse: "서버에서 @봇이름으로 멘션하거나 DM을 보내세요. 크레딧은 이 계정에서 자동 차감됩니다.",
+      },
+      googleChat: {
+        title: "Google Chat",
+        connected: "연동됨",
+        notConnected: "미연동",
+        connectedHint: "구글로 로그인하셨다면 이미 연동되어 있습니다.",
+        howToUse: "Google Chat에서 Cafelua 앱을 추가한 후 메시지를 보내세요.",
+      },
+      viewGuide: "설정 가이드 보기",
     },
   },
   manual: {

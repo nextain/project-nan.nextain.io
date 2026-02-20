@@ -127,7 +127,7 @@ export default async function ManualSectionPage({
           <ManualMarkdown markdown={markdown} lang={lang} />
 
           {/* Prev / Next navigation */}
-          <nav className="mt-12 flex items-center justify-between border-t border-border/40 pt-6">
+          <nav className="mt-12 flex clear-both items-center justify-between border-t border-border/40 pt-6">
             {prevSlug ? (
               <Link
                 href={`/${lang}/manual/${prevSlug}`}
@@ -154,7 +154,7 @@ export default async function ManualSectionPage({
 
           {/* Next section shortcut at bottom */}
           {nextSlug && (
-            <div className="mt-6 rounded-lg border border-border/50 bg-muted/20 p-4">
+            <div className="mt-6 clear-both rounded-lg border border-border/50 bg-muted/20 p-4">
               <Link
                 href={`/${lang}/manual/${nextSlug}`}
                 className="flex items-center justify-between text-sm font-medium transition-colors hover:text-primary"

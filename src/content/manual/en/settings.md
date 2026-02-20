@@ -22,8 +22,6 @@ Configure all app settings. Click **Save** to apply changes.
 | Sakura | Cherry blossom pink |
 | Cloud | Light gray |
 
-![Theme selection](settings-theme.png)
-
 Click a color swatch for instant preview.
 
 ## Avatar
@@ -36,8 +34,6 @@ Click a color swatch for instant preview.
 ### Background Image
 - Default gradient or built-in backgrounds
 - **Choose File** to load a custom image (PNG, JPG, WebP)
-
-![Avatar settings](settings-avatar.png)
 
 ## Persona
 
@@ -67,16 +63,12 @@ Click "User Manual" to open this page in the browser.
 
 ## AI Settings
 
-![AI settings](settings-ai.png)
-
 - **Provider**: Gemini (default), OpenAI, Claude, Grok, zAI, Ollama
   - Currently only Gemini available; others coming soon
 - **Model**: Model name (e.g., gemini-2.5-flash)
 - **API Key**: Provider API key (not needed if using Lab)
 
 ## Voice (TTS/STT)
-
-![Voice settings](settings-voice.png)
 
 - **Voice Response (TTS)**: ON/OFF
 - **Voice Input (STT)**: ON/OFF
@@ -89,24 +81,32 @@ Click "User Manual" to open this page in the browser.
 
 ## Tools
 
+Manage the system control permissions available to the AI avatar.
+
 - **Enable Tools**: Master ON/OFF for tool features
 - **Gateway URL / Gateway Token**: Automatically managed in normal user environments, so manual input is not required
   - Only advanced users running a self-hosted Gateway need to check/edit these values
 - **Allowed Tools**: Tools marked as "Always Allow"
   - **Clear Allowed Tools**: Reset all approvals
 
+> **Security Tiers (T0~T3) Guide**
+> A 4-tier security system applies based on the system impact when the AI uses a tool.
+> - **T0 (Read-only)**: Query tasks. Automatically executed without user intervention.
+> - **T1 (Notify)**: Simple external search/notification. Shows an alert on screen upon execution.
+> - **T2 (Caution)**: System changes like creating/editing files. Requires explicit user approval.
+> - **T3 (Dangerous)**: Dangerous tasks like executing terminal commands. Requires approval every time.
+
 ## Channels
 
 - **Channel Management**: Check the status of connected messenger channels and control integration with external services.
 - (Detailed control is done in the Channels tab.)
 
-![Channels Settings](settings-channels.png)
-
-## Device
+## Device & Wake Word
 
 ![Device Settings](settings-device.png)
 
-- Manage external device integrations (e.g., paired OpenClaw nodes) and connections with smart home devices.
+- **Wake Word List**: Manage words to wake up the AI (e.g., "Hey Alpha", "Hello Alpha")
+- **Device Pairing**: Manage external device integrations (e.g., paired OpenClaw nodes) and connections with smart home devices.
 - Includes features for device approval and token resets.
 
 ## Memory (Facts)

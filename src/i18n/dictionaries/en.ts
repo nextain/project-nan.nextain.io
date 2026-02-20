@@ -33,7 +33,7 @@ const en: Dictionary = {
     manual: "Manual",
   },
   footer: {
-    brand: "Cafelua",
+    brand: "Cafelua Lab",
     tagline: "Where Technology meets Emotion",
     links: {
       privacy: "Privacy Policy",
@@ -239,6 +239,27 @@ const en: Dictionary = {
       themeDark: "Dark",
       themeSystem: "System",
       language: "Language",
+    },
+    integrations: {
+      title: "Integrations",
+      description: "Chat with Alpha from Discord, Google Chat, and more.",
+      discord: {
+        title: "Discord",
+        connected: "Connected",
+        notConnected: "Not Connected",
+        connectedHint: "If you logged in with Discord, you are already connected.",
+        inviteBot: "Add Bot to Server",
+        inviteBotDescription: "Add this bot to your server to chat via @Alpha mention or DM.",
+        howToUse: "Mention @botname in your server or send a DM. Credits are charged to this account automatically.",
+      },
+      googleChat: {
+        title: "Google Chat",
+        connected: "Connected",
+        notConnected: "Not Connected",
+        connectedHint: "If you logged in with Google, you are already connected.",
+        howToUse: "Add the Cafelua app in Google Chat and start messaging.",
+      },
+      viewGuide: "View Setup Guide",
     },
   },
   manual: {

@@ -61,7 +61,12 @@ Pick from 4 presets:
 
 ![Personality selection screen](onboarding-personality.png)
 
-### 5. Complete
+### 5. Messenger Integration (Optional)
+Set up integration with supported messengers like Telegram or Slack. This step can be skipped and configured later in the settings.
+
+![Messenger integration screen](onboarding-messenger.png)
+
+### 6. Complete
 
 ![Onboarding complete screen](onboarding-complete.png)
 Click **Get Started** to enter the main screen.

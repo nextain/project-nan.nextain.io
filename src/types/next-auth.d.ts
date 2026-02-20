@@ -3,6 +3,7 @@ import "next-auth";
 declare module "next-auth" {
   interface Session {
     gwUserId: string;
+    provider: string;
   }
 }
 

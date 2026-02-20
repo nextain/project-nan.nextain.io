@@ -6,6 +6,8 @@ import type { Locale } from "@/i18n/config";
 import { notFound, redirect } from "next/navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default async function SettingsPage({
   params,
@@ -52,6 +54,23 @@ export default async function SettingsPage({
               <span className="font-mono text-xs text-foreground">{user?.budget_id ?? "-"}</span>
             </p>
           </div>
+        </CardContent>
+      </Card>
+
+      {/* Integrations link */}
+      <Card>
+        <CardHeader>
+          <CardTitle className="text-base">{dict.settings.integrations.title}</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <p className="mb-3 text-sm text-muted-foreground">
+            {dict.settings.integrations.description}
+          </p>
+          <Button asChild variant="outline" size="sm">
+            <Link href={`/${lang}/settings/integrations`}>
+              {dict.settings.integrations.title} &rarr;
+            </Link>
+          </Button>
         </CardContent>
       </Card>
     </div>

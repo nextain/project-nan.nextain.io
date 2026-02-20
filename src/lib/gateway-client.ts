@@ -115,6 +115,7 @@ export async function socialLogin(
   email: string,
   name?: string,
   avatarUrl?: string,
+  providerAccountId?: string,
 ): Promise<SocialLoginResponse> {
   return gwJson<SocialLoginResponse>("/v1/auth/login", {
     method: "POST",
@@ -123,9 +124,43 @@ export async function socialLogin(
       email,
       name,
       avatar_url: avatarUrl,
+      provider_account_id: providerAccountId,
       device_type: "web",
     }),
   });
+}
+
+// --- Lookup ---
+
+export interface LookupUserResponse {
+  user_id: string;
+  alias: string | null;
+  provider: string;
+  provider_account_id: string | null;
+  email: string | null;
+  name: string | null;
+  avatar_url: string | null;
+}
+
+/**
+ * Lookup a user by provider + provider_account_id or email.
+ * Used by Discord bot / Google Chat webhook to find the linked CaretUser.
+ */
+export async function lookupUser(
+  provider: string,
+  opts: { providerAccountId?: string; email?: string },
+): Promise<LookupUserResponse | null> {
+  const params = new URLSearchParams({ provider });
+  if (opts.providerAccountId) params.set("provider_account_id", opts.providerAccountId);
+  if (opts.email) params.set("email", opts.email);
+
+  const res = await gw(`/v1/auth/lookup?${params.toString()}`);
+  if (res.status === 404) return null;
+  if (!res.ok) {
+    const body = await res.text();
+    throw new Error(`Gateway ${res.status}: ${body}`);
+  }
+  return res.json() as Promise<LookupUserResponse>;
 }
 
 export async function getUser(userId: string): Promise<GatewayUser | null> {
