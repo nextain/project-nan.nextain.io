@@ -1,6 +1,6 @@
 "use client";
 
-import { nanLogo } from "@/components/ui/nan-logo";
+import { NanLogo } from "@/components/ui/nan-logo";
 import Link from "next/link";
 import { useDictionary } from "@/components/providers/locale-provider";
 import { Button } from "@/components/ui/button";
@@ -25,7 +25,7 @@ export function Header() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
         {/* Logo */}
         <Link href={`/${lang}`} className="flex items-center gap-2.5">
-          <nanLogo className="h-6 w-6" />
+          <NanLogo className="h-6 w-6" />
           <span className="text-lg font-bold tracking-tight">{dict.footer.brand}</span>
         </Link>
 
