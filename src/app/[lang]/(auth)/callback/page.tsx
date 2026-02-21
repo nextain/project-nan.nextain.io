@@ -24,14 +24,27 @@ function CallbackContent() {
       try {
         let discordUserId: string | null = null;
         if (channel === "discord") {
-          const sessionRes = await fetch("/api/auth/session", { method: "GET" });
-          if (sessionRes.ok) {
-            const sessionData = (await sessionRes.json()) as {
-              provider?: string;
-              providerAccountId?: string;
+          const linkedRes = await fetch("/api/gateway/discord-linked", { method: "GET" });
+          if (linkedRes.ok) {
+            const linkedData = (await linkedRes.json()) as {
+              discordUserId?: string | null;
             };
-            if (sessionData.provider === "discord" && sessionData.providerAccountId) {
-              discordUserId = sessionData.providerAccountId;
+            if (linkedData.discordUserId) {
+              discordUserId = linkedData.discordUserId;
+            }
+          } else {
+            const sessionRes = await fetch("/api/auth/session", { method: "GET" });
+            if (sessionRes.ok) {
+              const sessionData = (await sessionRes.json()) as {
+                provider?: string;
+                providerAccountId?: string;
+              };
+              if (
+                sessionData.provider === "discord" &&
+                sessionData.providerAccountId
+              ) {
+                discordUserId = sessionData.providerAccountId;
+              }
             }
           }
         }
