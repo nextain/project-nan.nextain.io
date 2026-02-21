@@ -12,6 +12,7 @@ import {
 import { Badge } from "@/components/ui/badge";
 import type { Dictionary } from "@/i18n/dictionaries/types";
 import type { UsageLog } from "@/lib/gateway-client";
+import type { Locale } from "@/i18n/config";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
@@ -22,7 +23,7 @@ export function LogsTable({
 }: {
   logs: UsageLog[];
   dict: Dictionary;
-  lang: "ko" | "en";
+  lang: Locale;
 }) {
   const [statusFilter, setStatusFilter] = useState<string>("all");
   const [modelFilter, setModelFilter] = useState<string>("");

@@ -1,9 +1,10 @@
 import crypto from "crypto";
+import type { Locale } from "@/i18n/config";
 
 export interface LemonCheckoutParams {
   userId: string;
   email?: string | null;
-  lang: "ko" | "en";
+  lang: Locale;
 }
 
 export function isLemonSqueezyConfigured(): boolean {

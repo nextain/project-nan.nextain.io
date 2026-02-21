@@ -118,6 +118,11 @@ function CallbackContent() {
           </a>
           {dict.auth.callbackManualSuffix}
         </p>
+        <div className="pt-4 mt-4 border-t border-border/40">
+          <Button variant="outline" className="w-full" asChild>
+            <Link href={`/${lang}/dashboard`}>{dict.sidebar.dashboard}</Link>
+          </Button>
+        </div>
       </CardContent>
     </Card>
   );

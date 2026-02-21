@@ -11,7 +11,7 @@ export default async function PublicLayout({
 
   return (
     <>
-      <Header hasSession={!!session} />
+      <Header session={session} />
       <main className="min-h-[calc(100vh-4rem)]">{children}</main>
       <Footer />
     </>

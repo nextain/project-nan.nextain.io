@@ -37,3 +37,178 @@
  GET /ko 200 in 96ms (compile: 44ms, proxy.ts: 4ms, generate-params: 41ms, render: 48ms)
 ✓ Compiled in 29ms
 ✓ Compiled in 33ms
+✓ Compiled in 30ms
+✓ Compiled in 30ms
+✓ Compiled in 32ms
+✓ Compiled in 27ms
+✓ Compiled in 533ms
+✓ Compiled in 266ms
+✓ Compiled in 36ms
+ GET /en 200 in 554ms (compile: 220ms, proxy.ts: 2ms, generate-params: 53ms, render: 332ms)
+ GET /naia-os-logo.jpg 404 in 150ms (compile: 81ms, proxy.ts: 11ms, generate-params: 73ms, render: 59ms)
+ GET /naia-os-logo.jpg 404 in 116ms (compile: 56ms, proxy.ts: 3ms, generate-params: 54ms, render: 56ms)
+ GET /en 200 in 171ms (compile: 58ms, proxy.ts: 4ms, generate-params: 55ms, render: 109ms)
+ GET /en 200 in 177ms (compile: 60ms, proxy.ts: 3ms, generate-params: 54ms, render: 114ms)
+ GET /naia-os-logo.jpg 404 in 112ms (compile: 58ms, proxy.ts: 3ms, generate-params: 54ms, render: 51ms)
+ GET /opengrph-image.jpg 404 in 118ms (compile: 59ms, proxy.ts: 3ms, generate-params: 55ms, render: 56ms)
+ GET /favicon.ico 404 in 117ms (compile: 58ms, generate-params: 56ms, render: 58ms)
+ GET /en 200 in 181ms (compile: 62ms, proxy.ts: 4ms, generate-params: 57ms, render: 115ms)
+✓ Compiled in 529ms
+ GET /opengrph-image.jpg 200 in 1068ms (compile: 559ms, proxy.ts: 47ms, generate-params: 59ms, render: 462ms)
+ GET /opengrph-image.jpg 200 in 326ms (compile: 51ms, proxy.ts: 46ms, generate-params: 33µs, render: 229ms)
+ GET /opengrph-image.jpg 200 in 221ms (compile: 96ms, proxy.ts: 5ms, generate-params: 59ms, render: 121ms)
+ GET /opengrph-image.jpg 200 in 124ms (compile: 5ms, proxy.ts: 17ms, generate-params: 21µs, render: 101ms)
+ GET /en 200 in 1244ms (compile: 676ms, proxy.ts: 42ms, generate-params: 42µs, render: 526ms)
+ GET /opengrph-image.jpg 200 in 110ms (compile: 24ms, proxy.ts: 4ms, generate-params: 33µs, render: 82ms)
+ GET /en 200 in 463ms (compile: 73ms, proxy.ts: 5ms, generate-params: 28µs, render: 386ms)
+ GET /en 200 in 416ms (compile: 111ms, proxy.ts: 7ms, generate-params: 23µs, render: 298ms)
+ GET /opengrph-image.jpg 200 in 198ms (compile: 14ms, proxy.ts: 4ms, generate-params: 32µs, render: 180ms)
+ GET /en 200 in 380ms (compile: 5ms, proxy.ts: 5ms, generate-params: 23µs, render: 370ms)
+ GET /opengrph-image.jpg 200 in 205ms (compile: 26ms, proxy.ts: 23ms, generate-params: 23µs, render: 155ms)
+ GET /en 200 in 380ms (compile: 7ms, proxy.ts: 4ms, generate-params: 27µs, render: 368ms)
+ GET /opengrph-image.jpg 200 in 125ms (compile: 6ms, proxy.ts: 19ms, generate-params: 35µs, render: 99ms)
+ GET /opengrph-image.jpg 200 in 127ms (compile: 28ms, proxy.ts: 7ms, generate-params: 25µs, render: 92ms)
+ GET /en 200 in 394ms (compile: 36ms, proxy.ts: 5ms, generate-params: 21µs, render: 353ms)
+ GET /opengrph-image.jpg 200 in 138ms (compile: 23ms, proxy.ts: 4ms, generate-params: 23µs, render: 111ms)
+ GET /en 200 in 364ms (compile: 62ms, proxy.ts: 4ms, generate-params: 56ms, render: 298ms)
+ GET /opengrph-image.jpg 200 in 118ms (compile: 19ms, proxy.ts: 5ms, generate-params: 22µs, render: 94ms)
+ GET /en 200 in 300ms (compile: 12ms, proxy.ts: 6ms, generate-params: 23µs, render: 282ms)
+ GET /opengrph-image.jpg 200 in 202ms (compile: 25ms, proxy.ts: 3ms, generate-params: 20µs, render: 174ms)
+ GET /en 200 in 377ms (compile: 7ms, proxy.ts: 5ms, generate-params: 25µs, render: 365ms)
+ GET /opengrph-image.jpg 200 in 200ms (compile: 85ms, proxy.ts: 4ms, generate-params: 26µs, render: 111ms)
+ GET /en 200 in 372ms (compile: 6ms, proxy.ts: 17ms, generate-params: 26µs, render: 349ms)
+ GET /opengrph-image.jpg 200 in 118ms (compile: 20ms, proxy.ts: 6ms, generate-params: 24µs, render: 92ms)
+ GET /en 200 in 356ms (compile: 9ms, proxy.ts: 5ms, generate-params: 29µs, render: 342ms)
+ GET /opengrph-image.jpg 200 in 122ms (compile: 27ms, proxy.ts: 4ms, generate-params: 21µs, render: 90ms)
+ GET /en 200 in 361ms (compile: 65ms, proxy.ts: 3ms, generate-params: 55ms, render: 292ms)
+ GET /opengrph-image.jpg 200 in 198ms (compile: 28ms, proxy.ts: 4ms, generate-params: 22µs, render: 166ms)
+ GET /en 200 in 353ms (compile: 5ms, proxy.ts: 4ms, generate-params: 25µs, render: 344ms)
+ GET /opengrph-image.jpg 200 in 177ms (compile: 80ms, proxy.ts: 4ms, generate-params: 57ms, render: 93ms)
+ GET /en 200 in 355ms (compile: 8ms, proxy.ts: 6ms, generate-params: 25µs, render: 341ms)
+ GET /opengrph-image.jpg 200 in 139ms (compile: 29ms, proxy.ts: 4ms, generate-params: 31µs, render: 106ms)
+ GET /en 200 in 375ms (compile: 11ms, proxy.ts: 4ms, generate-params: 31µs, render: 359ms)
+ GET /opengrph-image.jpg 200 in 145ms (compile: 27ms, proxy.ts: 5ms, generate-params: 32µs, render: 114ms)
+ GET /en 200 in 374ms (compile: 5ms, proxy.ts: 19ms, generate-params: 22µs, render: 350ms)
+ GET /opengrph-image.jpg 200 in 125ms (compile: 26ms, proxy.ts: 4ms, generate-params: 28µs, render: 96ms)
+ GET /en 200 in 303ms (compile: 9ms, proxy.ts: 3ms, generate-params: 24µs, render: 290ms)
+ GET /opengrph-image.jpg 200 in 184ms (compile: 29ms, proxy.ts: 4ms, generate-params: 23µs, render: 151ms)
+ GET /en 200 in 368ms (compile: 10ms, proxy.ts: 4ms, generate-params: 23µs, render: 354ms)
+ GET /opengrph-image.jpg 200 in 207ms (compile: 79ms, proxy.ts: 8ms, generate-params: 21µs, render: 120ms)
+ GET /en 200 in 372ms (compile: 5ms, proxy.ts: 3ms, generate-params: 30µs, render: 364ms)
+ GET /opengrph-image.jpg 200 in 146ms (compile: 21ms, proxy.ts: 26ms, generate-params: 25µs, render: 99ms)
+ GET /en 200 in 368ms (compile: 9ms, proxy.ts: 4ms, generate-params: 22µs, render: 354ms)
+ GET /opengrph-image.jpg 200 in 139ms (compile: 29ms, proxy.ts: 5ms, generate-params: 25µs, render: 104ms)
+ GET /en 200 in 386ms (compile: 63ms, proxy.ts: 9ms, generate-params: 55ms, render: 314ms)
+ GET /opengrph-image.jpg 200 in 114ms (compile: 22ms, proxy.ts: 5ms, generate-params: 25µs, render: 87ms)
+ GET /en 200 in 318ms (compile: 9ms, proxy.ts: 17ms, generate-params: 22µs, render: 293ms)
+ GET /en 200 in 354ms (compile: 11ms, proxy.ts: 3ms, generate-params: 20µs, render: 340ms)
+ GET /opengrph-image.jpg 200 in 176ms (compile: 8ms, proxy.ts: 15ms, generate-params: 22µs, render: 153ms)
+ GET /opengrph-image.jpg 200 in 183ms (compile: 95ms, proxy.ts: 7ms, generate-params: 21µs, render: 81ms)
+ GET /en 200 in 352ms (compile: 10ms, proxy.ts: 3ms, generate-params: 33µs, render: 339ms)
+ GET /opengrph-image.jpg 200 in 146ms (compile: 25ms, proxy.ts: 4ms, generate-params: 21µs, render: 117ms)
+ GET /en 200 in 362ms (compile: 6ms, proxy.ts: 3ms, generate-params: 35µs, render: 353ms)
+ GET /opengrph-image.jpg 200 in 140ms (compile: 43ms, proxy.ts: 8ms, generate-params: 23µs, render: 89ms)
+ GET /en 200 in 378ms (compile: 73ms, proxy.ts: 23ms, generate-params: 57ms, render: 282ms)
+ GET /opengrph-image.jpg 200 in 130ms (compile: 23ms, proxy.ts: 4ms, generate-params: 22µs, render: 104ms)
+ GET /en 200 in 367ms (compile: 9ms, proxy.ts: 5ms, generate-params: 24µs, render: 354ms)
+ GET /opengrph-image.jpg 200 in 174ms (compile: 28ms, proxy.ts: 4ms, generate-params: 22µs, render: 142ms)
+ GET /en 200 in 351ms (compile: 12ms, proxy.ts: 3ms, generate-params: 20µs, render: 336ms)
+ GET /opengrph-image.jpg 200 in 117ms (compile: 25ms, proxy.ts: 4ms, generate-params: 26µs, render: 89ms)
+ GET /en 200 in 343ms (compile: 9ms, proxy.ts: 4ms, generate-params: 35µs, render: 330ms)
+ GET /opengrph-image.jpg 200 in 120ms (compile: 42ms, proxy.ts: 4ms, generate-params: 22µs, render: 74ms)
+ GET /en 200 in 349ms (compile: 10ms, proxy.ts: 3ms, generate-params: 23µs, render: 336ms)
+ GET /opengrph-image.jpg 200 in 133ms (compile: 22ms, proxy.ts: 4ms, generate-params: 27µs, render: 107ms)
+ GET /en 200 in 346ms (compile: 61ms, proxy.ts: 3ms, generate-params: 56ms, render: 281ms)
+ GET /opengrph-image.jpg 200 in 136ms (compile: 25ms, proxy.ts: 20ms, generate-params: 28µs, render: 91ms)
+ GET /en 200 in 294ms (compile: 9ms, proxy.ts: 3ms, generate-params: 29µs, render: 282ms)
+ GET /opengrph-image.jpg 200 in 197ms (compile: 28ms, proxy.ts: 4ms, generate-params: 23µs, render: 166ms)
+ GET /en 200 in 372ms (compile: 9ms, proxy.ts: 5ms, generate-params: 22µs, render: 358ms)
+ GET /opengrph-image.jpg 200 in 191ms (compile: 99ms, proxy.ts: 4ms, generate-params: 24µs, render: 88ms)
+ GET /en 200 in 350ms (compile: 8ms, proxy.ts: 4ms, generate-params: 29µs, render: 339ms)
+ GET /opengrph-image.jpg 200 in 236ms (compile: 5ms, proxy.ts: 20ms, generate-params: 22µs, render: 211ms)
+ GET /en 200 in 475ms (compile: 9ms, proxy.ts: 4ms, generate-params: 21µs, render: 462ms)
+ GET /opengrph-image.jpg 200 in 319ms (compile: 42ms, proxy.ts: 3ms, generate-params: 29µs, render: 274ms)
+ GET /en 200 in 549ms (compile: 69ms, proxy.ts: 3ms, generate-params: 58ms, render: 477ms)
+ GET /opengrph-image.jpg 200 in 210ms (compile: 99ms, proxy.ts: 3ms, generate-params: 73ms, render: 107ms)
+ GET /en 200 in 491ms (compile: 6ms, proxy.ts: 3ms, generate-params: 28µs, render: 482ms)
+ GET /opengrph-image.jpg 200 in 139ms (compile: 24ms, proxy.ts: 21ms, generate-params: 20µs, render: 94ms)
+ GET /en 200 in 494ms (compile: 17ms, proxy.ts: 3ms, generate-params: 33µs, render: 474ms)
+ GET /opengrph-image.jpg 200 in 137ms (compile: 26ms, proxy.ts: 3ms, generate-params: 34µs, render: 107ms)
+ GET /en 200 in 393ms (compile: 7ms, proxy.ts: 6ms, generate-params: 22µs, render: 380ms)
+ GET /opengrph-image.jpg 200 in 112ms (compile: 38ms, proxy.ts: 4ms, generate-params: 35µs, render: 69ms)
+ GET /en 200 in 293ms (compile: 7ms, proxy.ts: 4ms, generate-params: 26µs, render: 282ms)
+ GET /en 200 in 345ms (compile: 10ms, proxy.ts: 4ms, generate-params: 24µs, render: 330ms)
+ GET /opengrph-image.jpg 200 in 159ms (compile: 8ms, proxy.ts: 4ms, generate-params: 23µs, render: 148ms)
+ GET /opengrph-image.jpg 200 in 176ms (compile: 84ms, proxy.ts: 5ms, generate-params: 96µs, render: 87ms)
+ GET /en 200 in 345ms (compile: 10ms, proxy.ts: 3ms, generate-params: 35µs, render: 332ms)
+ GET /opengrph-image.jpg 200 in 143ms (compile: 21ms, proxy.ts: 5ms, generate-params: 26µs, render: 117ms)
+ GET /en 200 in 351ms (compile: 4ms, proxy.ts: 3ms, generate-params: 23µs, render: 344ms)
+ GET /opengrph-image.jpg 200 in 145ms (compile: 24ms, proxy.ts: 23ms, generate-params: 22µs, render: 97ms)
+ GET /en 200 in 379ms (compile: 69ms, proxy.ts: 22ms, generate-params: 56ms, render: 287ms)
+ GET /opengrph-image.jpg 200 in 215ms (compile: 27ms, proxy.ts: 3ms, generate-params: 29µs, render: 185ms)
+ GET /en 200 in 394ms (compile: 6ms, proxy.ts: 5ms, generate-params: 25µs, render: 383ms)
+ GET /opengrph-image.jpg 200 in 190ms (compile: 82ms, proxy.ts: 28ms, generate-params: 58ms, render: 80ms)
+ GET /en 200 in 388ms (compile: 8ms, proxy.ts: 15ms, generate-params: 23µs, render: 365ms)
+ GET /en 200 in 364ms (compile: 10ms, proxy.ts: 4ms, generate-params: 24µs, render: 351ms)
+ GET /opengrph-image.jpg 200 in 114ms (compile: 5ms, proxy.ts: 20ms, generate-params: 23µs, render: 89ms)
+ GET /opengrph-image.jpg 200 in 122ms (compile: 23ms, proxy.ts: 3ms, generate-params: 23µs, render: 96ms)
+ GET /en 200 in 375ms (compile: 15ms, proxy.ts: 5ms, generate-params: 33µs, render: 355ms)
+ GET /opengrph-image.jpg 200 in 151ms (compile: 25ms, proxy.ts: 10ms, generate-params: 23µs, render: 116ms)
+ GET /en 200 in 307ms (compile: 6ms, proxy.ts: 3ms, generate-params: 34µs, render: 298ms)
+ GET /opengrph-image.jpg 200 in 215ms (compile: 29ms, proxy.ts: 21ms, generate-params: 66µs, render: 166ms)
+ GET /en 200 in 378ms (compile: 9ms, proxy.ts: 4ms, generate-params: 26µs, render: 366ms)
+ GET /opengrph-image.jpg 200 in 204ms (compile: 94ms, proxy.ts: 5ms, generate-params: 21µs, render: 105ms)
+ GET /en 200 in 376ms (compile: 6ms, proxy.ts: 10ms, generate-params: 23µs, render: 359ms)
+ GET /opengrph-image.jpg 200 in 135ms (compile: 22ms, proxy.ts: 21ms, generate-params: 47µs, render: 93ms)
+ GET /en 200 in 389ms (compile: 7ms, proxy.ts: 21ms, generate-params: 24µs, render: 361ms)
+ GET /opengrph-image.jpg 200 in 118ms (compile: 22ms, proxy.ts: 3ms, generate-params: 24µs, render: 92ms)
+ GET /en 200 in 361ms (compile: 77ms, proxy.ts: 4ms, generate-params: 60ms, render: 280ms)
+ GET /opengrph-image.jpg 200 in 118ms (compile: 23ms, proxy.ts: 3ms, generate-params: 22µs, render: 92ms)
+ GET /en 200 in 288ms (compile: 7ms, proxy.ts: 3ms, generate-params: 23µs, render: 278ms)
+ GET /opengrph-image.jpg 200 in 196ms (compile: 22ms, proxy.ts: 5ms, generate-params: 29µs, render: 169ms)
+ GET /en 200 in 351ms (compile: 5ms, proxy.ts: 3ms, generate-params: 30µs, render: 343ms)
+ GET /opengrph-image.jpg 200 in 335ms (compile: 100ms, proxy.ts: 3ms, generate-params: 22µs, render: 232ms)
+ GET /en 200 in 212ms (compile: 174ms, proxy.ts: 4ms, generate-params: 24µs, render: 34ms)
+ GET /en 200 in 353ms (compile: 67ms, proxy.ts: 5ms, generate-params: 59ms, render: 281ms)
+ GET /en 200 in 492ms (compile: 8ms, proxy.ts: 4ms, generate-params: 24µs, render: 479ms)
+ GET /en 200 in 421ms (compile: 7ms, proxy.ts: 4ms, generate-params: 25µs, render: 410ms)
+⨯ Error: ENOENT: no such file or directory, open '/home/luke/dev/naia.nextain.io/.next/dev/server/app/[lang]/(public)/page/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/luke/dev/naia.nextain.io/.next/dev/server/app/[lang]/(public)/page/build-manifest.json'
+}
+⨯ Failed to generate static paths for /[lang]:
+Error: ENOENT: no such file or directory, open '/home/luke/dev/naia.nextain.io/.next/dev/prerender-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/luke/dev/naia.nextain.io/.next/dev/prerender-manifest.json'
+}
+⨯ Failed to generate static paths for /[lang]:
+Error: ENOENT: no such file or directory, open '/home/luke/dev/naia.nextain.io/.next/dev/prerender-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/luke/dev/naia.nextain.io/.next/dev/prerender-manifest.json'
+}
+⨯ Failed to generate static paths for /[lang]:
+Error: ENOENT: no such file or directory, open '/home/luke/dev/naia.nextain.io/.next/dev/prerender-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/luke/dev/naia.nextain.io/.next/dev/prerender-manifest.json'
+}
+⨯ Failed to generate static paths for /[lang]:
+Error: ENOENT: no such file or directory, open '/home/luke/dev/naia.nextain.io/.next/dev/prerender-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/luke/dev/naia.nextain.io/.next/dev/prerender-manifest.json'
+}
+ GET /en 200 in 313ms (compile: 9ms, proxy.ts: 3ms, generate-params: 25µs, render: 301ms)

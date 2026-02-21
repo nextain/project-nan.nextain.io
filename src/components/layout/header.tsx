@@ -8,11 +8,22 @@ import { Menu, X, Github, MessageSquare } from "lucide-react";
 import { useState } from "react";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { Session } from "next-auth";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { signOut } from "next-auth/react";
 
-export function Header({ hasSession = false }: { hasSession?: boolean }) {
+export function Header({ session }: { session: Session | null }) {
   const dict = useDictionary();
   const lang = dict.locale;
   const [mobileOpen, setMobileOpen] = useState(false);
+  const hasSession = !!session;
+  const user = session?.user;
 
   const navLinks = [
     { href: `/${lang}#pricing`, label: dict.header.pricing },
@@ -59,9 +70,26 @@ export function Header({ hasSession = false }: { hasSession?: boolean }) {
           <ThemeToggle />
           <LanguageSwitcher />
           {hasSession ? (
-            <Button variant="ghost" size="sm" asChild>
-              <Link href={`/${lang}/dashboard`}>{dict.sidebar.dashboard}</Link>
-            </Button>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="ghost" size="icon" className="rounded-full">
+                  <Avatar className="h-8 w-8">
+                    <AvatarImage src={user?.image ?? undefined} />
+                    <AvatarFallback className="text-xs">
+                      {user?.name?.[0]?.toUpperCase() ?? "U"}
+                    </AvatarFallback>
+                  </Avatar>
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end" className="w-48">
+                <DropdownMenuItem asChild>
+                  <Link href={`/${lang}/dashboard`}>{dict.sidebar.dashboard}</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => signOut({ callbackUrl: `/${lang}` })}>
+                  {dict.auth.logout}
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           ) : (
             <Button variant="ghost" size="sm" asChild>
               <Link href={`/${lang}/login`}>{dict.header.login}</Link>
@@ -113,9 +141,19 @@ export function Header({ hasSession = false }: { hasSession?: boolean }) {
               <LanguageSwitcher />
             </div>
             {hasSession ? (
-              <Button size="sm" className="mt-1" asChild>
-                <Link href={`/${lang}/dashboard`}>{dict.sidebar.dashboard}</Link>
-              </Button>
+              <div className="flex flex-col gap-2 pt-1">
+                <Button variant="outline" size="sm" asChild className="justify-start">
+                  <Link href={`/${lang}/dashboard`}>{dict.sidebar.dashboard}</Link>
+                </Button>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={() => signOut({ callbackUrl: `/${lang}` })}
+                  className="justify-start"
+                >
+                  {dict.auth.logout}
+                </Button>
+              </div>
             ) : (
               <Button size="sm" className="mt-1" asChild>
                 <Link href={`/${lang}/login`}>{dict.header.login}</Link>

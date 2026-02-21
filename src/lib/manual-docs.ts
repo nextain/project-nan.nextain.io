@@ -1,4 +1,5 @@
 import { readFile } from "fs/promises";
+import { existsSync } from "fs";
 import path from "path";
 import type { Locale } from "@/i18n/config";
 
@@ -30,7 +31,7 @@ export async function readManual(
   slug?: ManualSlug,
 ): Promise<string> {
   const filename = slug ?? "index";
-  const fullPath = path.join(
+  let fullPath = path.join(
     process.cwd(),
     "src",
     "content",
@@ -38,6 +39,18 @@ export async function readManual(
     lang,
     `${filename}.md`,
   );
+
+  if (!existsSync(fullPath)) {
+    fullPath = path.join(
+      process.cwd(),
+      "src",
+      "content",
+      "manual",
+      "en",
+      `${filename}.md`,
+    );
+  }
+
   return readFile(fullPath, "utf-8");
 }
 

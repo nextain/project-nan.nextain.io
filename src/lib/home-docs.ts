@@ -1,4 +1,5 @@
 import { readFile } from "fs/promises";
+import { existsSync } from "fs";
 import path from "path";
 import type { Locale } from "@/i18n/config";
 
@@ -8,7 +9,12 @@ export interface HomeFaqItem {
 }
 
 export async function readHomeFaq(lang: Locale): Promise<HomeFaqItem[]> {
-  const fullPath = path.join(process.cwd(), "src", "content", "home", lang, "faq.md");
+  let fullPath = path.join(process.cwd(), "src", "content", "home", lang, "faq.md");
+  
+  if (!existsSync(fullPath)) {
+    fullPath = path.join(process.cwd(), "src", "content", "home", "en", "faq.md");
+  }
+
   const markdown = await readFile(fullPath, "utf-8");
   return parseFaqMarkdown(markdown);
 }
