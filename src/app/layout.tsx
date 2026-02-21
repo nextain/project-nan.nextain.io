@@ -24,20 +24,27 @@ export const metadata: Metadata = {
   ],
   metadataBase: new URL("https://naia.nextain.io"),
   openGraph: {
-    title: "Naia OS — The most advanced AI agent, as the perfect OS.",
-    description:
-      "A complete AI ecosystem with 3D avatar, voice chat, and multi-LLM support. Experience the power of AI agents without coding.",
+    title: "Naia OS",
+    description: "Your Personal AI Desktop OS. Experience a complete AI ecosystem with a 3D avatar.",
     url: "https://naia.nextain.io",
     siteName: "Naia OS",
-    locale: "en_US",
-    alternateLocale: "ko_KR",
     type: "website",
+    locale: "en_US",
+    alternateLocale: ["ko_KR"],
+    images: [
+      {
+        url: "/logo.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Naia OS Cover Image",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Naia OS — The most advanced AI agent, as the perfect OS.",
-    description:
-      "A complete AI ecosystem with 3D avatar, voice chat, and multi-LLM support.",
+    title: "Naia OS",
+    description: "Your Personal AI Desktop OS. Experience a complete AI ecosystem with a 3D avatar.",
+    images: ["/logo.jpg"],
   },
 };
 

@@ -23,6 +23,15 @@ export async function generateMetadata({
   return {
     title: dictionary.meta.title,
     description: dictionary.meta.description,
+    openGraph: {
+      title: dictionary.meta.title,
+      description: dictionary.meta.description,
+      locale: lang === "ko" ? "ko_KR" : "en_US",
+    },
+    twitter: {
+      title: dictionary.meta.title,
+      description: dictionary.meta.description,
+    },
   };
 }
 
