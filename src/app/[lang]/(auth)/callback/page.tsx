@@ -22,9 +22,11 @@ function CallbackContent() {
   useEffect(() => {
     async function issueKey() {
       try {
+        // Always try to resolve Discord user ID for desktop deep links.
+        // Even Google-login users may have a linked Discord account.
         let discordUserId: string | null = null;
-        if (channel === "discord") {
-          // Method 1: Gateway lookup (may have provider_account_id from socialLogin)
+        if (source !== "web") {
+          // Method 1: Gateway lookup (checks linked Discord account by email)
           try {
             const linkedRes = await fetch("/api/gateway/discord-linked", { method: "GET" });
             if (linkedRes.ok) {
@@ -39,7 +41,7 @@ function CallbackContent() {
             // Gateway lookup failed — fall through to session
           }
 
-          // Method 2: Session fallback — after Discord signIn, session has providerAccountId
+          // Method 2: Session fallback — if current session is Discord OAuth
           if (!discordUserId) {
             try {
               const sessionRes = await fetch("/api/auth/session", { method: "GET" });
