@@ -1,8 +1,8 @@
-# lab.cafelua.com 프로젝트 인덱스
+# naia.nextain.io 프로젝트 인덱스
 version: "1.0"
 
 project:
-  name: lab.cafelua.com
+  name: naia.nextain.io
   type: web-app
   owner: luke
   org: cafelua
@@ -32,7 +32,7 @@ related_projects:
   cafelua-os:
     relation: desktop-client
     path: ../cafelua-os
-    note: "Desktop app that consumes lab.cafelua.com auth flow"
+    note: "Desktop app that consumes naia.nextain.io auth flow"
 
 # 미러링 규칙
 mirroring:
