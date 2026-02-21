@@ -15,13 +15,15 @@ naia 서비스 포털. OAuth 로그인 + 크레딧 대시보드 + any-llm gatewa
 │   ├── agents-rules.json   # SoT ← 필수 읽기
 │   └── project-index.yaml  # 인덱스 ← 필수 읽기
 └── workflows/
-    └── development-cycle.yaml  # 코딩 전 필수
+    ├── development-cycle.yaml  # 코딩 전 필수
+    └── translation.yaml        # 문서 번역 규칙
 
 .users/                     # 사람용 (한국어, Markdown, 상세)
 ├── context/
 │   └── agents-rules.md     # 규칙 상세 (미러)
 └── workflows/
-    └── development-cycle.md
+    ├── development-cycle.md
+    └── translation.md
 ```
 
 ## 프로젝트 구조

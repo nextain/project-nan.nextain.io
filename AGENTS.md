@@ -10,6 +10,7 @@
 | Context | When to read |
 |---------|-------------|
 | `.agents/workflows/development-cycle.yaml` | Before any coding (ALWAYS) |
+| `.agents/workflows/translation.yaml` | When requested to translate docs |
 
 ## Mirroring
 
