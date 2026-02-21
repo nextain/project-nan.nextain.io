@@ -1,0 +1,20 @@
+name: manual-translation
+description: "Workflow for translating documentation into multiple languages using Gemini 2.5 Flash via Node.js script."
+
+trigger: "When requested to translate manuals or documentation into supported languages."
+
+steps:
+  - id: setup
+    action: "Ensure `@google/generative-ai` and `dotenv` are installed (can be installed with `--no-save` if temporary) and `GEMINI_API_KEY` is present in `.env`."
+  - id: create_script
+    action: "Create a Node.js script that uses the `@google/generative-ai` SDK initialized with `gemini-2.5-flash`."
+  - id: define_prompt
+    action: "Craft a system prompt instructing the model to act as a technical translator, preserving Markdown formatting and specific brand names (e.g., Naia OS, Nextain, Next AI Networks)."
+  - id: execute
+    action: "Iterate over the target locales, read the source English markdown files, call `model.generateContent()`, clean up any markdown code block wrappers from the response, and save the result to the respective locale directories."
+  - id: rate_limit
+    action: "Add artificial delays (e.g., 1~2 seconds) between API calls and implement basic retry logic to gracefully handle rate limits."
+
+rules:
+  - "Do NOT use Gemini CLI's sub-agents (`codebase_investigator`, etc.) for bulk text translation, as they cannot currently be forced to use `gemini-2.5-flash`."
+  - "Always use a custom Node.js script with the official SDK for bulk translations to ensure the correct model and prompt are used."

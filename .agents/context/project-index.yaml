@@ -22,6 +22,11 @@ workflows:
     mirror: .users/workflows/development-cycle.md
     description: "PLAN → CHECK → BUILD → VERIFY → CLEAN → COMMIT"
     load: before-coding
+  translation:
+    path: .agents/workflows/translation.yaml
+    mirror: .users/workflows/translation.md
+    description: "Manual translation workflow using gemini-2.5-flash via Node script"
+    load: when requested to translate docs
 
 # 관련 프로젝트 (참조용, 수정 금지)
 related_projects:
@@ -42,6 +47,8 @@ mirroring:
       users: .users/context/agents-rules.md
     - agents: .agents/workflows/development-cycle.yaml
       users: .users/workflows/development-cycle.md
+    - agents: .agents/workflows/translation.yaml
+      users: .users/workflows/translation.md
 
 # 작업 로그
 work_logs:
