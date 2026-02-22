@@ -46,5 +46,5 @@ export async function POST() {
 
   const key = await issueDesktopKey(session.gwUserId);
 
-  return NextResponse.json({ key });
+  return NextResponse.json({ key, userId: session.gwUserId });
 }

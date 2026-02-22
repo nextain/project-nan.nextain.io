@@ -1,5 +1,6 @@
 type BuildNaiaAuthDeepLinkInput = {
   key: string;
+  userId?: string | null;
   state?: string | null;
   channel?: string | null;
   discordUserId?: string | null;
@@ -25,6 +26,10 @@ export function buildNaiaAuthDeepLink(input: BuildNaiaAuthDeepLinkInput): string
   const params = new URLSearchParams();
   params.set("key", input.key);
 
+  if (input.userId?.trim()) {
+    params.set("user_id", input.userId.trim());
+  }
+
   if (input.state?.trim()) {
     params.set("state", input.state.trim());
   }
@@ -38,8 +43,6 @@ export function buildNaiaAuthDeepLink(input: BuildNaiaAuthDeepLinkInput): string
     params.set("channel", "discord");
     if (discordUserId) {
       params.set("discord_user_id", discordUserId);
-      // Backward compatibility with current shell deep-link parser fallback.
-      params.set("user_id", discordUserId);
     }
     if (discordTarget) {
       params.set("discord_target", discordTarget);

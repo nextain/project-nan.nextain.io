@@ -16,6 +16,7 @@ function CallbackContent() {
   const state = searchParams.get("state");
   const channel = searchParams.get("channel");
   const [key, setKey] = useState<string | null>(null);
+  const [userId, setUserId] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
 
@@ -67,12 +68,14 @@ function CallbackContent() {
           method: "POST",
         });
         if (!res.ok) throw new Error(dict.common.error);
-        const data = await res.json();
+        const data = (await res.json()) as { key: string; userId: string };
         setKey(data.key);
+        setUserId(data.userId);
 
         if (source !== "web") {
           const deepLink = buildNaiaAuthDeepLink({
             key: data.key,
+            userId: data.userId,
             state,
             channel,
             discordUserId,
@@ -147,6 +150,7 @@ function CallbackContent() {
 
   const deepLinkUrl = buildNaiaAuthDeepLink({
     key,
+    userId,
     state,
     channel,
   });
