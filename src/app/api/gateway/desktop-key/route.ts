@@ -6,7 +6,7 @@ import { auth, issueDesktopKey } from "@/lib/auth";
  * Limits desktop key issuance to 5 per hour per user.
  */
 const rateLimitMap = new Map<string, { count: number; resetAt: number }>();
-const RATE_LIMIT = 5;
+const RATE_LIMIT = 30;
 const RATE_WINDOW_MS = 60 * 60 * 1000; // 1 hour
 
 function checkRateLimit(userId: string): boolean {
