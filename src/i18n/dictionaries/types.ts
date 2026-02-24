@@ -279,12 +279,19 @@ export interface Dictionary {
     releaseNotes: string;
     requirements: string;
     requirementsList: string[];
-    formats: {
-      flatpak: { name: string; description: string; command: string };
-      appimage: { name: string; description: string; command: string };
-      deb: { name: string; description: string; command: string };
-      rpm: { name: string; description: string; command: string };
+    naiaOs: {
+      title: string;
+      description: string;
+      note: string;
+      cta: string;
     };
+    formats: {
+      flatpak: { name: string; description: string; command: string; note: string };
+      appimage: { name: string; description: string; command: string; note: string };
+      deb: { name: string; description: string; command: string; note: string };
+      rpm: { name: string; description: string; command: string; note: string };
+    };
+    shellOnly: string;
     checksum: string;
     checksumDescription: string;
     allReleases: string;

@@ -10,6 +10,8 @@ import {
   ExternalLink,
   Github,
   CheckCircle,
+  HardDrive,
+  Info,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -21,9 +23,9 @@ const RELEASE_BASE = `https://github.com/${GITHUB_REPO}/releases`;
 
 const DOWNLOAD_URLS: Record<string, string> = {
   flatpak: `${RELEASE_BASE}/latest/download/Naia-Shell-x86_64.flatpak`,
-  appimage: `${RELEASE_BASE}/latest/download/Naia_0.1.0_amd64.AppImage`,
-  deb: `${RELEASE_BASE}/latest/download/Naia_0.1.0_amd64.deb`,
-  rpm: `${RELEASE_BASE}/latest/download/Naia-0.1.0-1.x86_64.rpm`,
+  appimage: `${RELEASE_BASE}/latest/download/Naia.Shell_0.1.0_amd64.AppImage`,
+  deb: `${RELEASE_BASE}/latest/download/Naia.Shell_0.1.0_amd64.deb`,
+  rpm: `${RELEASE_BASE}/latest/download/Naia.Shell-0.1.0-1.x86_64.rpm`,
 };
 
 const FORMAT_ICONS = {
@@ -54,51 +56,77 @@ export default async function DownloadPage({
         <p className="text-lg text-muted-foreground">{d.subtitle}</p>
       </div>
 
-      {/* Download Cards */}
+      {/* Naia OS — Recommended */}
+      <Card className="mb-8 border-primary/50 bg-primary/5">
+        <CardHeader className="pb-3">
+          <div className="flex items-center gap-3">
+            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
+              <HardDrive className="h-5 w-5" />
+            </div>
+            <div className="flex items-center gap-2">
+              <CardTitle className="text-lg">{d.naiaOs.title}</CardTitle>
+              <Badge variant="default" className="text-xs">
+                {d.recommended}
+              </Badge>
+            </div>
+          </div>
+        </CardHeader>
+        <CardContent>
+          <p className="mb-3 text-sm text-muted-foreground">
+            {d.naiaOs.description}
+          </p>
+          <p className="mb-4 flex items-start gap-1.5 text-xs text-amber-600 dark:text-amber-400">
+            <Info className="mt-0.5 h-3.5 w-3.5 shrink-0" />
+            {d.naiaOs.note}
+          </p>
+          <Button className="w-full" asChild>
+            <Link
+              href={`https://github.com/${GITHUB_REPO}/actions`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Download className="mr-2 h-4 w-4" />
+              {d.naiaOs.cta}
+            </Link>
+          </Button>
+        </CardContent>
+      </Card>
+
+      {/* Shell-only notice */}
+      <p className="mb-4 text-center text-sm text-muted-foreground">
+        {d.shellOnly}
+      </p>
+
+      {/* Shell Download Cards */}
       <div className="mb-12 grid gap-4 sm:grid-cols-2">
         {formats.map((key) => {
           const fmt = d.formats[key];
           const Icon = FORMAT_ICONS[key];
-          const isFlatpak = key === "flatpak";
 
           return (
-            <Card
-              key={key}
-              className={
-                isFlatpak
-                  ? "border-primary/50 bg-primary/5 sm:col-span-2"
-                  : ""
-              }
-            >
+            <Card key={key}>
               <CardHeader className="pb-3">
                 <div className="flex items-center gap-3">
-                  <div
-                    className={`flex h-10 w-10 items-center justify-center rounded-lg ${isFlatpak ? "bg-primary/10 text-primary" : "bg-muted"}`}
-                  >
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-muted">
                     <Icon className="h-5 w-5" />
                   </div>
-                  <div className="flex items-center gap-2">
-                    <CardTitle className="text-lg">{fmt.name}</CardTitle>
-                    {isFlatpak && (
-                      <Badge variant="default" className="text-xs">
-                        {d.recommended}
-                      </Badge>
-                    )}
-                  </div>
+                  <CardTitle className="text-lg">{fmt.name}</CardTitle>
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="mb-4 text-sm text-muted-foreground">
+                <p className="mb-2 text-sm text-muted-foreground">
                   {fmt.description}
                 </p>
-                <div className="mb-4 rounded-md bg-muted/50 p-3">
-                  <code className="text-xs break-all">{fmt.command}</code>
+                <p className="mb-3 flex items-start gap-1.5 text-xs text-amber-600 dark:text-amber-400">
+                  <Info className="mt-0.5 h-3.5 w-3.5 shrink-0" />
+                  {fmt.note}
+                </p>
+                <div className="mb-4 overflow-x-auto rounded-md bg-muted/50 p-3">
+                  <pre className="text-xs leading-relaxed">
+                    <code>{fmt.command}</code>
+                  </pre>
                 </div>
-                <Button
-                  className="w-full"
-                  variant={isFlatpak ? "default" : "outline"}
-                  asChild
-                >
+                <Button className="w-full" variant="outline" asChild>
                   <Link href={DOWNLOAD_URLS[key]} target="_blank" rel="noreferrer">
                     <Download className="mr-2 h-4 w-4" />
                     {fmt.name} {d.version}
