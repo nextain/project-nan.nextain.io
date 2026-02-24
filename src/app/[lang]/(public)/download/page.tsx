@@ -16,6 +16,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { CopyButton } from "@/components/ui/copy-button";
 import Link from "next/link";
 
 const GITHUB_REPO = "nextain/naia-os";
@@ -54,6 +55,11 @@ export default async function DownloadPage({
       <div className="mb-12 text-center">
         <h1 className="mb-4 text-4xl font-bold tracking-tight">{d.title}</h1>
         <p className="text-lg text-muted-foreground">{d.subtitle}</p>
+      </div>
+
+      {/* Verification Notice */}
+      <div className="mb-8 rounded-lg border border-blue-200 bg-blue-50 p-4 text-center text-sm text-blue-800 dark:border-blue-800 dark:bg-blue-950/30 dark:text-blue-300">
+        {d.verificationNotice}
       </div>
 
       {/* Naia OS — Recommended */}
@@ -115,10 +121,11 @@ export default async function DownloadPage({
                   <Info className="mt-0.5 h-3.5 w-3.5 shrink-0" />
                   {fmt.note}
                 </p>
-                <div className="mb-4 overflow-x-auto rounded-md bg-muted/50 p-3">
+                <div className="relative mb-4 overflow-x-auto rounded-md bg-muted/50 p-3 pr-10">
                   <pre className="text-xs leading-relaxed">
                     <code>{fmt.command}</code>
                   </pre>
+                  <CopyButton text={fmt.command} />
                 </div>
                 <Button className="w-full" variant="outline" disabled>
                   <Download className="mr-2 h-4 w-4" />
@@ -130,7 +137,7 @@ export default async function DownloadPage({
         })}
       </div>
 
-      {/* Gateway Guide */}
+      {/* OpenClaw Gateway Guide */}
       <Card className="mb-12 border-amber-500/30 bg-amber-50/50 dark:bg-amber-950/20">
         <CardHeader className="pb-3">
           <div className="flex items-center gap-3">
@@ -184,8 +191,9 @@ export default async function DownloadPage({
         <p className="mb-3 text-sm text-muted-foreground">
           {d.checksumDescription}
         </p>
-        <div className="rounded-md bg-muted/50 p-3">
+        <div className="relative rounded-md bg-muted/50 p-3 pr-10">
           <code className="text-xs">sha256sum -c SHA256SUMS</code>
+          <CopyButton text="sha256sum -c SHA256SUMS" />
         </div>
       </div>
 

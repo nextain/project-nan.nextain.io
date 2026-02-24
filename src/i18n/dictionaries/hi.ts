@@ -319,6 +319,7 @@ const hi: Dictionary = {
       "Wayland या X11",
       "Node.js 22+ (AppImage/deb/rpm के लिए)",
     ],
+    "verificationNotice": "प्रत्येक बिल्ड की जांच पूरी होने पर डाउनलोड एक-एक करके सक्षम किए जाएंगे।",
     "naiaOs": {
       "title": "Naia OS (लाइव USB / इंस्टॉल)",
       "description": "संपूर्ण Naia अनुभव। AI अवतार, गेटवे, कोरियाई इनपुट और पूर्व-स्थापित ऐप्स शामिल हैं। USB से बूट करके आज़माएँ, या हार्ड ड्राइव पर इंस्टॉल करें।",
@@ -353,9 +354,9 @@ const hi: Dictionary = {
     },
     "shellOnly": "केवल Shell UI — AI सुविधाओं के लिए Naia OS या अलग गेटवे सेटअप आवश्यक है।",
     "gateway": {
-      "title": "AI गेटवे के बारे में",
-      "description": "Naia की AI सुविधाएँ (चैट, आवाज़, टूल) OpenClaw गेटवे द्वारा संचालित हैं। Shell UI अकेला AI नहीं चला सकता — इसके साथ एक गेटवे चलना आवश्यक है।",
-      "naiaOsIncluded": "Naia OS में गेटवे पहले से इंस्टॉल है। बस बूट करें और शुरू करें।",
+      "title": "OpenClaw के बारे में",
+      "description": "Naia की AI सुविधाएँ (चैट, आवाज़, टूल, स्किल) ओपन सोर्स AI गेटवे OpenClaw द्वारा संचालित हैं। Shell UI अकेला AI नहीं चला सकता — इसके साथ OpenClaw चलना आवश्यक है।",
+      "naiaOsIncluded": "Naia OS में OpenClaw पहले से इंस्टॉल है। बस बूट करें और शुरू करें।",
       "shellOnlyGuide": "ऊपर दिए गए Shell-केवल पैकेज के लिए, आपको अलग से OpenClaw इंस्टॉल करना होगा।",
       "openclawLink": "OpenClaw सेटअप गाइड",
     },

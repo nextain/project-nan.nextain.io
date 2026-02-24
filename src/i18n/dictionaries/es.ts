@@ -319,6 +319,7 @@ const es: Dictionary = {
       "Wayland o X11",
       "Node.js 22+ (para AppImage/deb/rpm)",
     ],
+    "verificationNotice": "Las descargas se habilitarán una por una a medida que cada compilación pase la verificación.",
     "naiaOs": {
       "title": "Naia OS (Live USB / Instalación)",
       "description": "La experiencia completa de Naia. Incluye avatar de IA, gateway, entrada en coreano y aplicaciones preinstaladas. Arranca desde USB para probar, o instala en el disco duro.",
@@ -353,9 +354,9 @@ const es: Dictionary = {
     },
     "shellOnly": "Solo Shell UI — las funciones de IA requieren Naia OS o una configuración de gateway independiente.",
     "gateway": {
-      "title": "Acerca del gateway de IA",
-      "description": "Las funciones de IA de Naia (chat, voz, herramientas) funcionan con el gateway de OpenClaw. La Shell UI por sí sola no puede ejecutar IA — necesita un gateway ejecutándose junto a ella.",
-      "naiaOsIncluded": "Naia OS incluye el gateway preinstalado. Solo arranca y listo.",
+      "title": "Acerca de OpenClaw",
+      "description": "Las funciones de IA de Naia (chat, voz, herramientas, habilidades) funcionan con OpenClaw, un gateway de IA de código abierto. La Shell UI por sí sola no puede ejecutar IA — necesita OpenClaw ejecutándose junto a ella.",
+      "naiaOsIncluded": "Naia OS incluye OpenClaw preinstalado. Solo arranca y listo.",
       "shellOnlyGuide": "Para los paquetes solo Shell anteriores, necesitas instalar OpenClaw por separado.",
       "openclawLink": "Guía de configuración de OpenClaw",
     },

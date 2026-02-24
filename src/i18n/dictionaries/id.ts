@@ -319,6 +319,7 @@ const id: Dictionary = {
       "Wayland atau X11",
       "Node.js 22+ (untuk AppImage/deb/rpm)",
     ],
+    "verificationNotice": "Unduhan akan diaktifkan satu per satu setelah setiap build melewati verifikasi.",
     "naiaOs": {
       "title": "Naia OS (Live USB / Instalasi)",
       "description": "Pengalaman Naia yang lengkap. Termasuk avatar AI, gateway, input Korea, dan aplikasi yang sudah terinstal. Boot dari USB untuk mencoba, atau instal ke hard drive.",
@@ -353,9 +354,9 @@ const id: Dictionary = {
     },
     "shellOnly": "Hanya Shell UI — fitur AI memerlukan Naia OS atau pengaturan gateway terpisah.",
     "gateway": {
-      "title": "Tentang Gateway AI",
-      "description": "Fitur AI Naia (obrolan, suara, alat) didukung oleh gateway OpenClaw. Shell UI saja tidak dapat menjalankan AI — diperlukan gateway yang berjalan bersamanya.",
-      "naiaOsIncluded": "Naia OS sudah termasuk gateway yang terinstal. Cukup boot dan langsung gunakan.",
+      "title": "Tentang OpenClaw",
+      "description": "Fitur AI Naia (obrolan, suara, alat, keterampilan) didukung oleh OpenClaw, gateway AI open source. Shell UI saja tidak dapat menjalankan AI — diperlukan OpenClaw yang berjalan bersamanya.",
+      "naiaOsIncluded": "Naia OS sudah termasuk OpenClaw yang terinstal. Cukup boot dan langsung gunakan.",
       "shellOnlyGuide": "Untuk paket Shell saja di atas, Anda perlu menginstal OpenClaw secara terpisah.",
       "openclawLink": "Panduan Pengaturan OpenClaw",
     },

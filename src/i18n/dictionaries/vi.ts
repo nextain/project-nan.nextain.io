@@ -319,6 +319,7 @@ const vi: Dictionary = {
       "Wayland hoặc X11",
       "Node.js 22+ (cho AppImage/deb/rpm)",
     ],
+    "verificationNotice": "Các bản tải xuống sẽ được kích hoạt lần lượt khi mỗi bản dựng vượt qua kiểm tra.",
     "naiaOs": {
       "title": "Naia OS (Live USB / Cài đặt)",
       "description": "Trải nghiệm Naia đầy đủ. Bao gồm avatar AI, gateway, nhập liệu tiếng Hàn và các ứng dụng cài sẵn. Khởi động từ USB để dùng thử, hoặc cài đặt vào ổ cứng.",
@@ -353,9 +354,9 @@ const vi: Dictionary = {
     },
     "shellOnly": "Chỉ Shell UI — tính năng AI yêu cầu Naia OS hoặc thiết lập gateway riêng.",
     "gateway": {
-      "title": "Về Gateway AI",
-      "description": "Các tính năng AI của Naia (trò chuyện, giọng nói, công cụ) được cung cấp bởi gateway OpenClaw. Shell UI một mình không thể chạy AI — cần có gateway chạy cùng.",
-      "naiaOsIncluded": "Naia OS đã bao gồm gateway cài sẵn. Chỉ cần khởi động và bắt đầu.",
+      "title": "Về OpenClaw",
+      "description": "Các tính năng AI của Naia (trò chuyện, giọng nói, công cụ, kỹ năng) được cung cấp bởi OpenClaw, một gateway AI mã nguồn mở. Shell UI một mình không thể chạy AI — cần có OpenClaw chạy cùng.",
+      "naiaOsIncluded": "Naia OS đã bao gồm OpenClaw cài sẵn. Chỉ cần khởi động và bắt đầu.",
       "shellOnlyGuide": "Đối với các gói Shell độc lập ở trên, bạn cần cài đặt OpenClaw riêng.",
       "openclawLink": "Hướng dẫn cài đặt OpenClaw",
     },

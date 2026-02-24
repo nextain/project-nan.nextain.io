@@ -328,6 +328,7 @@ const ko: Dictionary = {
       "Wayland 또는 X11",
       "Node.js 22+ (AppImage/deb/rpm 사용 시)",
     ],
+    verificationNotice: "각 빌드 검증이 완료되는 대로 순차적으로 다운로드가 오픈됩니다.",
     naiaOs: {
       title: "Naia OS (라이브 USB / 설치)",
       description: "완전한 Naia 경험. AI 아바타, 게이트웨이, 한글 입력, 기본 앱이 모두 포함되어 있습니다. USB로 부팅해서 체험하거나, 하드에 설치하세요.",
@@ -362,9 +363,9 @@ const ko: Dictionary = {
     },
     shellOnly: "Shell UI만 포함 — AI 기능은 Naia OS 또는 별도 게이트웨이 설치가 필요합니다.",
     gateway: {
-      title: "AI 게이트웨이 안내",
-      description: "Naia의 AI 기능(채팅, 음성, 도구)은 OpenClaw 게이트웨이로 동작합니다. Shell UI만으로는 AI를 사용할 수 없으며, 게이트웨이가 함께 실행되어야 합니다.",
-      naiaOsIncluded: "Naia OS에는 게이트웨이가 기본 설치되어 있습니다. 부팅만 하면 바로 사용 가능합니다.",
+      title: "OpenClaw 안내",
+      description: "Naia의 AI 기능(채팅, 음성, 도구, 스킬)은 오픈소스 AI 게이트웨이인 OpenClaw로 동작합니다. Shell UI만으로는 AI를 사용할 수 없으며, OpenClaw가 함께 실행되어야 합니다.",
+      naiaOsIncluded: "Naia OS에는 OpenClaw가 기본 설치되어 있습니다. 부팅만 하면 바로 사용 가능합니다.",
       shellOnlyGuide: "위의 Shell 단독 패키지를 사용하는 경우, OpenClaw를 별도로 설치해야 합니다.",
       openclawLink: "OpenClaw 설치 가이드",
     },

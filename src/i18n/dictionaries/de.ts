@@ -319,6 +319,7 @@ const de: Dictionary = {
       "Wayland oder X11",
       "Node.js 22+ (für AppImage/deb/rpm)",
     ],
+    "verificationNotice": "Downloads werden nach Abschluss der jeweiligen Build-Überprüfung nacheinander freigeschaltet.",
     "naiaOs": {
       "title": "Naia OS (Live USB / Installation)",
       "description": "Das vollständige Naia-Erlebnis. Enthält KI-Avatar, Gateway, koreanische Eingabe und vorinstallierte Apps. Vom USB booten zum Ausprobieren oder auf die Festplatte installieren.",
@@ -353,9 +354,9 @@ const de: Dictionary = {
     },
     "shellOnly": "Nur Shell UI — KI-Funktionen erfordern Naia OS oder ein separates Gateway-Setup.",
     "gateway": {
-      "title": "Über das KI-Gateway",
-      "description": "Die KI-Funktionen von Naia (Chat, Sprache, Tools) werden vom OpenClaw-Gateway betrieben. Die Shell UI allein kann keine KI ausführen — sie benötigt ein Gateway, das parallel läuft.",
-      "naiaOsIncluded": "Naia OS enthält das Gateway vorinstalliert. Einfach starten und loslegen.",
+      "title": "Über OpenClaw",
+      "description": "Die KI-Funktionen von Naia (Chat, Sprache, Tools, Skills) werden vom Open-Source-KI-Gateway OpenClaw betrieben. Die Shell UI allein kann keine KI ausführen — OpenClaw muss parallel laufen.",
+      "naiaOsIncluded": "Naia OS enthält OpenClaw vorinstalliert. Einfach starten und loslegen.",
       "shellOnlyGuide": "Für die oben genannten Shell-only-Pakete müssen Sie OpenClaw separat installieren.",
       "openclawLink": "OpenClaw-Einrichtungsanleitung",
     },

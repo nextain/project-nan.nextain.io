@@ -319,6 +319,7 @@ const ar: Dictionary = {
       "Wayland أو X11",
       "Node.js 22+ (لـ AppImage/deb/rpm)",
     ],
+    "verificationNotice": "سيتم تفعيل التنزيلات تدريجياً بعد التحقق من كل إصدار.",
     "naiaOs": {
       "title": "Naia OS (Live USB / تثبيت)",
       "description": "تجربة Naia الكاملة. يشمل صورة AI الرمزية، البوابة، إدخال الكورية، والتطبيقات المثبتة مسبقًا. أقلع من USB للتجربة، أو ثبّت على القرص الصلب.",
@@ -353,9 +354,9 @@ const ar: Dictionary = {
     },
     "shellOnly": "Shell UI فقط — تتطلب ميزات AI نظام Naia OS أو إعداد بوابة منفصل.",
     "gateway": {
-      "title": "حول بوابة AI",
-      "description": "تعمل ميزات AI في Naia (الدردشة، الصوت، الأدوات) بواسطة بوابة OpenClaw. لا يمكن لـ Shell UI وحده تشغيل AI — يحتاج إلى بوابة تعمل بجانبه.",
-      "naiaOsIncluded": "يتضمن Naia OS البوابة مثبتة مسبقًا. فقط قم بالتشغيل وابدأ.",
+      "title": "حول OpenClaw",
+      "description": "تعمل ميزات AI في Naia (الدردشة، الصوت، الأدوات، المهارات) على بوابة AI مفتوحة المصدر OpenClaw. لا يمكن لـ Shell UI وحده تشغيل AI — يحتاج إلى تشغيل OpenClaw بجانبه.",
+      "naiaOsIncluded": "يتضمن Naia OS برنامج OpenClaw مثبتًا مسبقًا. فقط قم بالتشغيل وابدأ.",
       "shellOnlyGuide": "لحزم Shell المستقلة أعلاه، تحتاج إلى تثبيت OpenClaw بشكل منفصل.",
       "openclawLink": "دليل إعداد OpenClaw",
     },

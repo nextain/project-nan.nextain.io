@@ -279,6 +279,7 @@ export interface Dictionary {
     releaseNotes: string;
     requirements: string;
     requirementsList: string[];
+    verificationNotice: string;
     naiaOs: {
       title: string;
       description: string;
