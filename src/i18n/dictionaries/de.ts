@@ -79,7 +79,7 @@ const de: Dictionary = {
         },
         "tools": {
           "title": "Das gesamte OS als Werkzeug",
-          "description": "Dateien, Terminal, Web, Browser — deine KI nutzt das OS selbst als Werkzeug. Sage „erstelle eine Datei" und sie tut es wirklich."
+          "description": "Dateien, Terminal, Web, Browser — deine KI nutzt das OS selbst als Werkzeug. Sage 'erstelle eine Datei' und sie tut es wirklich."
         },
         "desktop": {
           "title": "Vollständige lokale Kontrolle",
@@ -101,7 +101,7 @@ const de: Dictionary = {
     },
     "comparison": {
       "title": "Warum Naia",
-      "subtitle": "Andere KI-Tools sind nur „Werkzeuge". Naia ist „deine eigene KI".",
+      "subtitle": "Andere KI-Tools sind nur 'Werkzeuge'. Naia ist 'deine eigene KI'.",
       "headers": { "category": "Kategorie", "others": "Andere KI-Tools", "naia": "Naia" },
       "rows": {
         "ui": { "category": "Philosophie", "others": "KI als Werkzeug nutzen", "naia": "Der KI ein OS geben. Zusammen leben." },

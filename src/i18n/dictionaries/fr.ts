@@ -79,7 +79,7 @@ const fr: Dictionary = {
         },
         "tools": {
           "title": "L'OS entier comme outil",
-          "description": "Fichiers, terminal, web, navigateur — votre IA utilise l'OS lui-même comme outil. Dites « crée un fichier » et elle le fait vraiment."
+          "description": "Fichiers, terminal, web, navigateur — votre IA utilise l'OS lui-même comme outil. Dites 'crée un fichier' et elle le fait vraiment."
         },
         "desktop": {
           "title": "Contrôle local complet",
@@ -101,7 +101,7 @@ const fr: Dictionary = {
     },
     "comparison": {
       "title": "Pourquoi Naia",
-      "subtitle": "Les autres outils IA sont de simples « outils ». Naia, c'est « votre propre IA ».",
+      "subtitle": "Les autres outils IA sont de simples 'outils'. Naia, c'est 'votre propre IA'.",
       "headers": { "category": "Catégorie", "others": "Autres outils IA", "naia": "Naia" },
       "rows": {
         "ui": { "category": "Philosophie", "others": "Utiliser l'IA comme outil", "naia": "Donner un OS à l'IA. Vivre ensemble." },
