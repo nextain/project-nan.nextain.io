@@ -57,7 +57,7 @@ const es: Dictionary = {
   "home": {
     "hero": {
       "title": "Tu IA vive aquí. Tu SO, tus reglas.",
-      "subtitle": "Un SO de IA personal que te da control total — elige tu IA (incluyendo modelos locales), moldea su memoria y personalidad, personaliza su voz y avatar. Todo tuyo, todo local.",
+      "subtitle": "Un SO de IA de codigo abierto que devuelve la eleccion y el control a tus manos. Elige tu IA (incluyendo modelos locales), moldea su memoria y personalidad. Tu propia IA, viviendo en un Linux seguro y compatible con Steam.",
       "cta": "Comience gratis",
       "secondaryCta": "Descargar"
     },
@@ -86,8 +86,8 @@ const es: Dictionary = {
           "description": "Memoria, personalidad, configuración — todo almacenado en tu máquina. Una IA verdaderamente personal, libre de dependencia de la nube. Imagen USB booteable disponible."
         },
         "skills": {
-          "title": "Infinitamente extensible",
-          "description": "70 habilidades integradas + 5.700+ habilidades de la comunidad ClawHub. Clima, GitHub, Slack, Spotify, Discord — añade lo que necesites."
+          "title": "Codigo Abierto & Extensible",
+          "description": "Apache 2.0 codigo abierto. 70 habilidades integradas + 5.700+ habilidades comunitarias — anade o crea las tuyas. Inspecciona, modifica y personaliza el codigo tu mismo."
         },
         "discord": {
           "title": "Siempre contigo",
@@ -96,6 +96,14 @@ const es: Dictionary = {
         "daemon": {
           "title": "IA siempre activa",
           "description": "El gateway OpenClaw funciona en segundo plano 24/7. Incluso cuando cierras la app, tu IA sigue viva — recibiendo mensajes y trabajando."
+        },
+        "openSource": {
+          "title": "Codigo Abierto (Apache 2.0)",
+          "description": "Todo el codigo esta abierto. Verifica exactamente como la IA maneja tus datos. Inspecciona, modifica, contribuye. Una diferencia fundamental con los servicios de IA cerrados."
+        },
+        "vision": {
+          "title": "SO de juego inmutable + IA",
+          "description": "Construido sobre Bazzite, un SO inmutable que nunca se rompe. Gaming completo con Steam/Proton listo para usar. Sobre este Linux de juego seguro y potente, vive tu propia IA. Futuro: canta, juega y crea con tu IA, hasta llegar al Physical AI."
         }
       }
     },

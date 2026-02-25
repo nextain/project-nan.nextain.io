@@ -57,7 +57,7 @@ const vi: Dictionary = {
   "home": {
     "hero": {
       "title": "AI của bạn sống ở đây. Hệ điều hành của bạn, luật lệ của bạn.",
-      "subtitle": "Hệ điều hành AI cá nhân cho bạn toàn quyền kiểm soát — chọn AI của bạn (bao gồm mô hình cục bộ), định hình bộ nhớ và tính cách, tùy chỉnh giọng nói và avatar. Tất cả là của bạn, tất cả ở máy bạn.",
+      "subtitle": "He dieu hanh AI ma nguon mo tra lai quyen lua chon va kiem soat cho ban. Chon AI cua ban (bao gom mo hinh cuc bo), dinh hinh bo nho va tinh cach cua no. AI cua rieng ban, song tren mot Linux an toan va san sang cho Steam.",
       "cta": "Bắt đầu miễn phí",
       "secondaryCta": "Tải xuống"
     },
@@ -96,6 +96,14 @@ const vi: Dictionary = {
         "daemon": {
           "title": "AI luôn hoạt động",
           "description": "Gateway OpenClaw chạy nền 24/7. Ngay cả khi bạn đóng ứng dụng, AI của bạn vẫn sống — nhận tin nhắn và thực hiện công việc."
+        },
+        "openSource": {
+          "title": "Ma nguon mo (Apache 2.0)",
+          "description": "Toan bo ma nguon duoc cong khai. Xac minh chinh xac cach AI xu ly du lieu cua ban. Kiem tra, chinh sua, dong gop. Mot su khac biet co ban so voi cac dich vu AI dong."
+        },
+        "vision": {
+          "title": "He dieu hanh game bat bien + AI",
+          "description": "Xay dung tren Bazzite, mot he dieu hanh bat bien khong bao gio hong. Choi game Steam/Proton san sang ngay tu dau. Tren nen tang Linux game an toan va manh me nay, AI cua rieng ban sinh song. Tuong lai: hat, choi game va sang tao cung AI cua ban, huong toi Physical AI."
         }
       }
     },

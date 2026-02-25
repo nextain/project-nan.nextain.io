@@ -58,7 +58,7 @@ const en: Dictionary = {
     hero: {
       title: "Your AI lives here. Your OS, your rules.",
       subtitle:
-        "A personal AI OS that gives you full control — choose your AI (including local models), shape its memory and personality, customize its voice and avatar. All yours, all local.",
+        "An open-source AI OS that puts choice and control back in your hands. Choose your AI (including local models), shape its memory and personality. Your own AI, living on a safe, Steam-ready Linux.",
       cta: "Get Started Free",
       secondaryCta: "Download",
     },
@@ -92,9 +92,9 @@ const en: Dictionary = {
             "Memory, personality, settings — all stored on your machine. A truly personal AI, free from cloud dependency. Bootable USB OS image available.",
         },
         skills: {
-          title: "Infinitely Extensible",
+          title: "Open Source & Extensible",
           description:
-            "70 built-in skills + 5,700+ ClawHub community skills. Weather, GitHub, Slack, Spotify, Discord — add whatever you need.",
+            "Apache 2.0 open source. 70 built-in skills + 5,700+ community skills — add or build your own. Inspect, modify, and customize the code yourself.",
         },
         discord: {
           title: "Always With You",
@@ -105,6 +105,16 @@ const en: Dictionary = {
           title: "Always-On AI",
           description:
             "OpenClaw gateway runs in the background 24/7. Even when you close the app, your AI stays alive — receiving messages and doing work.",
+        },
+        openSource: {
+          title: "Open Source (Apache 2.0)",
+          description:
+            "The entire codebase is open. Verify exactly how AI handles your data. Inspect, modify, contribute. A fundamental difference from closed AI services.",
+        },
+        vision: {
+          title: "Immutable Gaming OS + AI",
+          description:
+            "Built on Bazzite, an immutable OS that never breaks. Full Steam/Proton gaming out of the box. On top of this safe, powerful gaming Linux — your own AI lives. Future: sing, game, and create with your AI, all the way to Physical AI.",
         },
       },
     },

@@ -8,12 +8,14 @@ import {
   Puzzle,
   MessageCircle,
   Cpu,
+  Code2,
+  Rocket,
 } from "lucide-react";
 import { SectionReveal } from "@/components/home/section-reveal";
 
 export function Features({ dict }: { dict: Dictionary }) {
   const items = dict.home.features.items;
-  const cards = [
+  const cards: { icon: React.ComponentType<{ className?: string }>; title: string; description: string; href?: string }[] = [
     { icon: Bot, title: items.companion.title, description: items.companion.description },
     {
       icon: Layers3,
@@ -30,6 +32,13 @@ export function Features({ dict }: { dict: Dictionary }) {
       description: items.discord.description,
     },
     { icon: Cpu, title: items.daemon.title, description: items.daemon.description },
+    {
+      icon: Code2,
+      title: items.openSource.title,
+      description: items.openSource.description,
+      href: "https://github.com/nextain/naia-os",
+    },
+    { icon: Rocket, title: items.vision.title, description: items.vision.description },
   ];
 
   return (
@@ -46,8 +55,8 @@ export function Features({ dict }: { dict: Dictionary }) {
       </SectionReveal>
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {cards.map((card, idx) => (
-          <SectionReveal key={card.title} delay={idx * 40}>
+        {cards.map((card, idx) => {
+          const content = (
             <article className="h-full rounded-xl border border-border/60 bg-card/70 p-5 shadow-sm backdrop-blur-sm transition hover:-translate-y-0.5 hover:border-primary/30 hover:shadow-md">
               <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-blue-600 via-cyan-500 to-emerald-500 shadow-sm">
                 <card.icon className="h-5 w-5 text-white" />
@@ -57,8 +66,19 @@ export function Features({ dict }: { dict: Dictionary }) {
                 {card.description}
               </p>
             </article>
-          </SectionReveal>
-        ))}
+          );
+          return (
+            <SectionReveal key={card.title} delay={idx * 40}>
+              {card.href ? (
+                <a href={card.href} target="_blank" rel="noopener noreferrer" className="block h-full">
+                  {content}
+                </a>
+              ) : (
+                content
+              )}
+            </SectionReveal>
+          );
+        })}
       </div>
     </section>
   );

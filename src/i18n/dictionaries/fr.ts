@@ -57,7 +57,7 @@ const fr: Dictionary = {
   "home": {
     "hero": {
       "title": "Votre IA vit ici. Votre OS, vos règles.",
-      "subtitle": "Un OS IA personnel qui vous donne le plein contrôle — choisissez votre IA (y compris les modèles locaux), façonnez sa mémoire et sa personnalité, personnalisez sa voix et son avatar. Tout est à vous, tout est en local.",
+      "subtitle": "Un OS IA open source qui remet le choix et le controle entre vos mains. Choisissez votre IA (y compris les modeles locaux), faconnez sa memoire et sa personnalite. Votre propre IA, vivant sur un Linux sur et compatible Steam.",
       "cta": "Commencez gratuitement",
       "secondaryCta": "Télécharger"
     },
@@ -86,8 +86,8 @@ const fr: Dictionary = {
           "description": "Mémoire, personnalité, paramètres — tout est stocké sur votre machine. Une IA vraiment personnelle, libre de toute dépendance au cloud. Image OS bootable sur USB disponible."
         },
         "skills": {
-          "title": "Extensible à l'infini",
-          "description": "70 compétences intégrées + 5 700+ compétences communautaires ClawHub. Météo, GitHub, Slack, Spotify, Discord — ajoutez tout ce dont vous avez besoin."
+          "title": "Open Source & Extensible",
+          "description": "Open source Apache 2.0. 70 competences integrees + 5 700+ competences communautaires — ajoutez ou creez les votres. Inspectez, modifiez et personnalisez le code vous-meme."
         },
         "discord": {
           "title": "Toujours avec vous",
@@ -96,6 +96,14 @@ const fr: Dictionary = {
         "daemon": {
           "title": "IA toujours active",
           "description": "La passerelle OpenClaw tourne en arrière-plan 24h/24. Même quand vous fermez l'application, votre IA reste active — elle reçoit des messages et exécute des tâches."
+        },
+        "openSource": {
+          "title": "Open Source (Apache 2.0)",
+          "description": "L'integralite du code est ouverte. Verifiez exactement comment l'IA traite vos donnees. Inspectez, modifiez, contribuez. Une difference fondamentale avec les services IA fermes."
+        },
+        "vision": {
+          "title": "OS de jeu immuable + IA",
+          "description": "Construit sur Bazzite, un OS immuable qui ne casse jamais. Gaming Steam/Proton pret a l'emploi. Sur ce Linux de jeu sur et puissant, votre propre IA vit. Futur : chanter, jouer et creer avec votre IA, jusqu'au Physical AI."
         }
       }
     },

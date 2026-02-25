@@ -58,7 +58,7 @@ const ko: Dictionary = {
     hero: {
       title: "나만의 AI가 살아있는, 나만의 OS.",
       subtitle:
-        "AI에 대한 선택권과 통제권을 개인에게 돌려주는 AI OS. 어떤 AI를 쓸지, 어떤 기억과 성격을 가질지, 어떤 목소리와 모습일지 — 모두 당신이 결정합니다.",
+        "오픈소스 AI OS가 선택권과 통제권을 개인에게 돌려줍니다. 어떤 AI를 쓸지, 어떤 기억과 성격을 가질지 — 모두 당신이 결정합니다. Steam 게이밍이 되는 안전한 Linux 위에, 나만의 AI가 산다.",
       cta: "무료로 시작하기",
       secondaryCta: "다운로드",
     },
@@ -92,9 +92,9 @@ const ko: Dictionary = {
             "기억, 성격, 설정 모두 내 컴퓨터에 저장됩니다. 클라우드에 종속되지 않는 진짜 개인 AI. USB 부팅 OS 이미지도 제공.",
         },
         skills: {
-          title: "무한 확장 가능",
+          title: "오픈소스 & 무한 확장",
           description:
-            "70개 내장 스킬 + ClawHub 5,700+ 커뮤니티 스킬. 날씨, GitHub, Slack, Spotify, Discord 등 원하는 기능을 자유롭게 추가.",
+            "Apache 2.0 오픈소스. 70개 내장 스킬 + 5,700+ 커뮤니티 스킬을 자유롭게 추가하고, 직접 만들 수도 있습니다. 코드를 확인하고, 수정하고, 커스텀하세요.",
         },
         discord: {
           title: "언제 어디서나",
@@ -105,6 +105,16 @@ const ko: Dictionary = {
           title: "항상 켜져있는 AI",
           description:
             "OpenClaw 게이트웨이가 백그라운드에서 항상 구동. 앱을 끄더라도 AI는 살아있고, 메시지를 받고, 작업을 수행합니다.",
+        },
+        openSource: {
+          title: "오픈소스 (Apache 2.0)",
+          description:
+            "코드 전체가 공개되어 있습니다. AI가 내 데이터를 어떻게 다루는지 직접 확인하고, 수정하고, 기여하세요. 폐쇄형 AI 서비스와의 근본적인 차이.",
+        },
+        vision: {
+          title: "게이밍 불변 OS + AI",
+          description:
+            "Bazzite 불변 OS 위에 구축. 시스템이 망가지지 않고, Steam/Proton으로 게임도 됩니다. 이 안전하고 강력한 게이밍 Linux 위에 나만의 AI가 상주합니다. 미래에는 AI와 함께 노래하고, 게임하고, Physical AI(안드로이드 OS)까지.",
         },
       },
     },

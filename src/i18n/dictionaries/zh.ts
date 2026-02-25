@@ -57,7 +57,7 @@ const zh: Dictionary = {
   "home": {
     "hero": {
       "title": "你的AI在这里鲜活存在，你的OS，你做主。",
-      "subtitle": "一个将AI选择权和掌控权交还给你的个人AI OS。选择你的AI（包括本地模型），塑造它的记忆和性格，定制它的声音和形象。一切属于你，一切在本地。",
+      "subtitle": "一个将选择权和掌控权交还到你手中的开源AI OS。选择你的AI（包括本地模型），塑造它的记忆和性格。在安全且支持Steam的Linux上，你自己的AI在此生活。",
       "cta": "免费开始使用",
       "secondaryCta": "下载"
     },
@@ -86,8 +86,8 @@ const zh: Dictionary = {
           "description": "记忆、性格、设置全部保存在你的电脑上。不依赖云端的真正个人AI。还提供USB启动OS镜像。"
         },
         "skills": {
-          "title": "无限扩展",
-          "description": "70个内置技能 + ClawHub 5,700+社区技能。天气、GitHub、Slack、Spotify、Discord等，自由添加你需要的功能。"
+          "title": "开源 & 无限扩展",
+          "description": "Apache 2.0开源。70个内置技能 + 5,700+社区技能，自由添加或自己构建。查看代码、修改代码、自定义代码。"
         },
         "discord": {
           "title": "随时随地",
@@ -96,6 +96,14 @@ const zh: Dictionary = {
         "daemon": {
           "title": "永不停歇的AI",
           "description": "OpenClaw网关在后台持续运行。即使关闭应用，AI依然保持活跃，接收消息，执行任务。"
+        },
+        "openSource": {
+          "title": "开源 (Apache 2.0)",
+          "description": "整个代码库完全公开。精确验证AI如何处理你的数据。检查、修改、贡献。这是与封闭AI服务的根本区别。"
+        },
+        "vision": {
+          "title": "不可变游戏OS + AI",
+          "description": "基于Bazzite构建，一个永不崩溃的不可变OS。开箱即用的Steam/Proton游戏体验。在这个安全、强大的游戏Linux之上，你自己的AI在此生活。未来：与AI一起唱歌、游戏、创造，直到Physical AI。"
         }
       }
     },

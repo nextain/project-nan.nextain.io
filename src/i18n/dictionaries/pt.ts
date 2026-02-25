@@ -57,7 +57,7 @@ const pt: Dictionary = {
   "home": {
     "hero": {
       "title": "Sua IA vive aqui. Seu SO, suas regras.",
-      "subtitle": "Um SO de IA pessoal que te dá controle total — escolha sua IA (incluindo modelos locais), molde sua memória e personalidade, personalize sua voz e avatar. Tudo seu, tudo local.",
+      "subtitle": "Um SO de IA de codigo aberto que devolve a escolha e o controle para suas maos. Escolha sua IA (incluindo modelos locais), molde sua memoria e personalidade. Sua propria IA, vivendo em um Linux seguro e pronto para Steam.",
       "cta": "Comece gratuitamente",
       "secondaryCta": "Baixar"
     },
@@ -96,6 +96,14 @@ const pt: Dictionary = {
         "daemon": {
           "title": "IA sempre ativa",
           "description": "O gateway OpenClaw funciona em segundo plano 24/7. Mesmo quando você fecha o app, sua IA continua viva — recebendo mensagens e realizando tarefas."
+        },
+        "openSource": {
+          "title": "Codigo Aberto (Apache 2.0)",
+          "description": "Todo o codigo esta aberto. Verifique exatamente como a IA lida com seus dados. Inspecione, modifique, contribua. Uma diferenca fundamental em relacao aos servicos de IA fechados."
+        },
+        "vision": {
+          "title": "SO de jogo imutavel + IA",
+          "description": "Construido sobre Bazzite, um SO imutavel que nunca quebra. Gaming completo com Steam/Proton pronto para uso. Sobre este Linux de jogo seguro e poderoso, sua propria IA vive. Futuro: cante, jogue e crie com sua IA, ate chegar ao Physical AI."
         }
       }
     },

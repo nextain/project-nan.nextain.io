@@ -57,7 +57,7 @@ const ja: Dictionary = {
   "home": {
     "hero": {
       "title": "自分だけのAIが息づく、自分だけのOS。",
-      "subtitle": "AIに対する選択権とコントロールを個人に取り戻すAI OS。どのAIを使うか、どんな記憶と性格を持つか、どんな声と姿にするか — すべてあなたが決めます。",
+      "subtitle": "選択権とコントロールをあなたの手に取り戻すオープンソースAI OS。AIを選び(ローカルモデルも対応)、記憶と性格を自分で形作る。安全でSteam対応のLinuxの上に、あなただけのAIが住んでいます。",
       "cta": "無料で始めましょう",
       "secondaryCta": "ダウンロード"
     },
@@ -86,8 +86,8 @@ const ja: Dictionary = {
           "description": "記憶、性格、設定はすべて自分のPCに保存されます。クラウドに依存しない本当の個人AI。USB起動OSイメージも提供。"
         },
         "skills": {
-          "title": "無限に拡張可能",
-          "description": "70個の内蔵スキル + ClawHub 5,700+コミュニティスキル。天気、GitHub、Slack、Spotify、Discordなど、好きな機能を自由に追加。"
+          "title": "オープンソース & 無限拡張",
+          "description": "Apache 2.0オープンソース。70個の内蔵スキル + 5,700+コミュニティスキルを自由に追加し、自分で作ることもできます。コードを確認し、修正し、カスタムしましょう。"
         },
         "discord": {
           "title": "いつでもどこでも",
@@ -96,6 +96,14 @@ const ja: Dictionary = {
         "daemon": {
           "title": "常に稼働するAI",
           "description": "OpenClawゲートウェイがバックグラウンドで常時稼働。アプリを閉じてもAIは生き続け、メッセージを受信し、作業を実行します。"
+        },
+        "openSource": {
+          "title": "オープンソース (Apache 2.0)",
+          "description": "コードベース全体が公開されています。AIがあなたのデータをどう扱うか正確に確認できます。調査し、修正し、貢献しましょう。クローズドなAIサービスとの根本的な違いです。"
+        },
+        "vision": {
+          "title": "不変のゲーミングOS + AI",
+          "description": "壊れることのない不変OS、Bazziteの上に構築。Steam/Protonゲーミングが最初から使えます。この安全で強力なゲーミングLinuxの上に、あなただけのAIが住んでいます。将来: AIと一緒に歌い、ゲームし、創造する。Physical AIへの道。"
         }
       }
     },

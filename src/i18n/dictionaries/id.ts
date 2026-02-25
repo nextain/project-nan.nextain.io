@@ -57,7 +57,7 @@ const id: Dictionary = {
   "home": {
     "hero": {
       "title": "AI Anda tinggal di sini. OS Anda, aturan Anda.",
-      "subtitle": "OS AI personal yang memberi Anda kendali penuh — pilih AI Anda (termasuk model lokal), bentuk memori dan kepribadiannya, kustomisasi suara dan avatarnya. Semua milik Anda, semua lokal.",
+      "subtitle": "OS AI open source yang mengembalikan pilihan dan kendali ke tangan Anda. Pilih AI Anda (termasuk model lokal), bentuk memori dan kepribadiannya. AI Anda sendiri, hidup di Linux yang aman dan siap Steam.",
       "cta": "Memulai Gratis",
       "secondaryCta": "Unduh"
     },
@@ -96,6 +96,14 @@ const id: Dictionary = {
         "daemon": {
           "title": "AI yang Selalu Aktif",
           "description": "Gateway OpenClaw berjalan di latar belakang 24/7. Bahkan saat Anda menutup aplikasi, AI Anda tetap hidup — menerima pesan dan mengerjakan tugas."
+        },
+        "openSource": {
+          "title": "Open Source (Apache 2.0)",
+          "description": "Seluruh basis kode terbuka. Verifikasi dengan tepat bagaimana AI menangani data Anda. Periksa, modifikasi, kontribusi. Perbedaan mendasar dari layanan AI tertutup."
+        },
+        "vision": {
+          "title": "OS Gaming Immutable + AI",
+          "description": "Dibangun di atas Bazzite, OS immutable yang tidak pernah rusak. Gaming Steam/Proton langsung siap pakai. Di atas Linux gaming yang aman dan powerful ini, AI Anda sendiri hidup. Masa depan: bernyanyi, bermain game, dan berkarya bersama AI Anda, menuju Physical AI."
         }
       }
     },

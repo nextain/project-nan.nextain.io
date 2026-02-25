@@ -57,7 +57,7 @@ const de: Dictionary = {
   "home": {
     "hero": {
       "title": "Deine KI lebt hier. Dein OS, deine Regeln.",
-      "subtitle": "Ein persönliches KI-OS, das dir die volle Kontrolle gibt — wähle deine KI (einschließlich lokaler Modelle), forme ihre Erinnerung und Persönlichkeit, gestalte ihre Stimme und ihren Avatar. Alles gehört dir, alles bleibt lokal.",
+      "subtitle": "Ein Open-Source-KI-OS, das Wahlfreiheit und Kontrolle in deine Hande zuruckgibt. Wahle deine KI (einschliesslich lokaler Modelle), forme ihre Erinnerung und Personlichkeit. Deine eigene KI, die auf einem sicheren, Steam-kompatiblen Linux lebt.",
       "cta": "Starten Sie kostenlos durch",
       "secondaryCta": "Herunterladen"
     },
@@ -86,8 +86,8 @@ const de: Dictionary = {
           "description": "Erinnerung, Persönlichkeit, Einstellungen — alles auf deinem Rechner gespeichert. Eine wirklich persönliche KI, frei von Cloud-Abhängigkeit. Bootfähiges USB-OS-Image verfügbar."
         },
         "skills": {
-          "title": "Unendlich erweiterbar",
-          "description": "70 integrierte Skills + 5.700+ ClawHub-Community-Skills. Wetter, GitHub, Slack, Spotify, Discord — füge hinzu, was du brauchst."
+          "title": "Open Source & Erweiterbar",
+          "description": "Apache 2.0 Open Source. 70 integrierte Skills + 5.700+ Community-Skills — hinzufugen oder eigene erstellen. Den Code selbst inspizieren, andern und anpassen."
         },
         "discord": {
           "title": "Immer an deiner Seite",
@@ -96,6 +96,14 @@ const de: Dictionary = {
         "daemon": {
           "title": "Immer aktive KI",
           "description": "Das OpenClaw-Gateway läuft rund um die Uhr im Hintergrund. Auch wenn du die App schließt, bleibt deine KI aktiv — empfängt Nachrichten und erledigt Aufgaben."
+        },
+        "openSource": {
+          "title": "Open Source (Apache 2.0)",
+          "description": "Die gesamte Codebasis ist offen. Prufe genau, wie die KI mit deinen Daten umgeht. Inspizieren, andern, beitragen. Ein grundlegender Unterschied zu geschlossenen KI-Diensten."
+        },
+        "vision": {
+          "title": "Unveranderliches Gaming-OS + KI",
+          "description": "Basierend auf Bazzite, einem unveranderlichen OS, das nie kaputt geht. Volles Steam/Proton-Gaming ab Werk. Auf diesem sicheren, leistungsstarken Gaming-Linux lebt deine eigene KI. Zukunft: mit deiner KI singen, spielen und erschaffen, bis hin zum Physical AI."
         }
       }
     },
