@@ -86,8 +86,8 @@ const de: Dictionary = {
           "description": "Erinnerung, Persönlichkeit, Einstellungen — alles auf deinem Rechner gespeichert. Eine wirklich persönliche KI, frei von Cloud-Abhängigkeit. Bootfähiges USB-OS-Image verfügbar."
         },
         "skills": {
-          "title": "Open Source & Erweiterbar",
-          "description": "Apache 2.0 Open Source. 70 integrierte Skills + 5.700+ Community-Skills — hinzufugen oder eigene erstellen. Den Code selbst inspizieren, andern und anpassen."
+          "title": "70+ Skills, Unbegrenzt Erweiterbar",
+          "description": "Wetter, GitHub, Slack, Spotify, Discord — 70 integrierte Skills + 5.700+ ClawHub Community-Skills. Fuge hinzu, was du brauchst, oder erstelle deine eigenen."
         },
         "discord": {
           "title": "Immer an deiner Seite",
@@ -102,14 +102,14 @@ const de: Dictionary = {
           "description": "Die gesamte Codebasis ist offen. Prufe genau, wie die KI mit deinen Daten umgeht. Inspizieren, andern, beitragen. Ein grundlegender Unterschied zu geschlossenen KI-Diensten."
         },
         "vision": {
-          "title": "Unveranderliches Gaming-OS + KI",
-          "description": "Basierend auf Bazzite, einem unveranderlichen OS, das nie kaputt geht. Volles Steam/Proton-Gaming ab Werk. Auf diesem sicheren, leistungsstarken Gaming-Linux lebt deine eigene KI. Zukunft: mit deiner KI singen, spielen und erschaffen, bis hin zum Physical AI."
+          "title": "Vision: Unveraenderliches Gaming-OS + KI",
+          "description": "Das Ziel: Basierend auf Bazzite, einem unveraenderlichen OS, das nie kaputt geht. Volles Steam/Proton-Gaming wird voll vorbereitet. Auf diesem sicheren, leistungsstarken Gaming-Linux wird deine eigene KI leben — singen, spielen und erschaffen mit deiner KI, bis hin zum Physical AI."
         }
       }
     },
     "comparison": {
       "title": "Warum Naia",
-      "subtitle": "Andere KI-Tools sind nur 'Werkzeuge'. Naia ist 'deine eigene KI'.",
+      "subtitle": "Andere KI-Tools sind geschlossene 'Werkzeuge'. Naia ist deine eigene KI im Open-Source — eine Vision von KI auf einem Gaming-OS.",
       "headers": { "category": "Kategorie", "others": "Andere KI-Tools", "naia": "Naia" },
       "rows": {
         "ui": { "category": "Philosophie", "others": "KI als Werkzeug nutzen", "naia": "Der KI ein OS geben. Zusammen leben." },

@@ -86,8 +86,8 @@ const zh: Dictionary = {
           "description": "记忆、性格、设置全部保存在你的电脑上。不依赖云端的真正个人AI。还提供USB启动OS镜像。"
         },
         "skills": {
-          "title": "开源 & 无限扩展",
-          "description": "Apache 2.0开源。70个内置技能 + 5,700+社区技能，自由添加或自己构建。查看代码、修改代码、自定义代码。"
+          "title": "70+项技能，无限扩展",
+          "description": "天气、GitHub、Slack、Spotify、Discord — 70个内置技能 + 5,700+ClawHub社区技能。添加你需要的，或自己构建。"
         },
         "discord": {
           "title": "随时随地",
@@ -102,14 +102,14 @@ const zh: Dictionary = {
           "description": "整个代码库完全公开。精确验证AI如何处理你的数据。检查、修改、贡献。这是与封闭AI服务的根本区别。"
         },
         "vision": {
-          "title": "不可变游戏OS + AI",
-          "description": "基于Bazzite构建，一个永不崩溃的不可变OS。开箱即用的Steam/Proton游戏体验。在这个安全、强大的游戏Linux之上，你自己的AI在此生活。未来：与AI一起唱歌、游戏、创造，直到Physical AI。"
+          "title": "愿景：不可变游戏OS + AI",
+          "description": "目标：基于Bazzite，一个永不崩溃的不可变OS。Steam/Proton游戏体验将完全准备好。在这个安全、强大的游戏Linux之上，你自己的AI将在此生活——与AI一起唱歌、游戏、创造，直至Physical AI。"
         }
       }
     },
     "comparison": {
       "title": "为什么选择Naia",
-      "subtitle": "现有AI工具只是「工具」。Naia是「你自己的AI」。",
+      "subtitle": "现有AI工具是封闭的「工具」。Naia是开源的「你自己的AI」,也是游戏OS上AI的愿景。",
       "headers": { "category": "类别", "others": "现有AI工具", "naia": "Naia" },
       "rows": {
         "ui": { "category": "理念", "others": "把AI当工具用", "naia": "给AI一个OS，与它共同生活" },

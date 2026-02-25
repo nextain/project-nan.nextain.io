@@ -86,8 +86,8 @@ const pt: Dictionary = {
           "description": "Memória, personalidade, configurações — tudo armazenado na sua máquina. Uma IA verdadeiramente pessoal, livre de dependência da nuvem. Imagem USB bootável disponível."
         },
         "skills": {
-          "title": "Infinitamente extensível",
-          "description": "70 habilidades integradas + 5.700+ habilidades da comunidade ClawHub. Clima, GitHub, Slack, Spotify, Discord — adicione o que precisar."
+          "title": "70+ Habilidades, Infinitamente Extensivel",
+          "description": "Clima, GitHub, Slack, Spotify, Discord — 70 habilidades integradas + 5.700+ habilidades da comunidade ClawHub. Adicione o que precisar ou crie os seus."
         },
         "discord": {
           "title": "Sempre com você",
@@ -102,14 +102,14 @@ const pt: Dictionary = {
           "description": "Todo o codigo esta aberto. Verifique exatamente como a IA lida com seus dados. Inspecione, modifique, contribua. Uma diferenca fundamental em relacao aos servicos de IA fechados."
         },
         "vision": {
-          "title": "SO de jogo imutavel + IA",
-          "description": "Construido sobre Bazzite, um SO imutavel que nunca quebra. Gaming completo com Steam/Proton pronto para uso. Sobre este Linux de jogo seguro e poderoso, sua propria IA vive. Futuro: cante, jogue e crie com sua IA, ate chegar ao Physical AI."
+          "title": "Visao: SO de jogo imutavel + IA",
+          "description": "O objetivo: Construido sobre Bazzite, um SO imutavel que nunca quebra. Gaming completo com Steam/Proton estara completamente pronto. Sobre este Linux de jogo seguro e poderoso, sua propria IA vivera — cante, jogue e crie com sua IA, ate chegar ao Physical AI."
         }
       }
     },
     "comparison": {
       "title": "Por que Naia",
-      "subtitle": "Outras ferramentas de IA são apenas 'ferramentas'. Naia é 'sua própria IA'.",
+      "subtitle": "Outras ferramentas de IA sao 'ferramentas' fechadas. Naia e sua propria IA open-source — uma visao de IA em um OS gaming.",
       "headers": { "category": "Categoria", "others": "Outras ferramentas de IA", "naia": "Naia" },
       "rows": {
         "ui": { "category": "Filosofia", "others": "Usar IA como ferramenta", "naia": "Dar à IA o SO. Viver juntos." },

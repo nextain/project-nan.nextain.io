@@ -86,8 +86,8 @@ const fr: Dictionary = {
           "description": "Mémoire, personnalité, paramètres — tout est stocké sur votre machine. Une IA vraiment personnelle, libre de toute dépendance au cloud. Image OS bootable sur USB disponible."
         },
         "skills": {
-          "title": "Open Source & Extensible",
-          "description": "Open source Apache 2.0. 70 competences integrees + 5 700+ competences communautaires — ajoutez ou creez les votres. Inspectez, modifiez et personnalisez le code vous-meme."
+          "title": "70+ Competences, Infiniment Extensible",
+          "description": "Meteo, GitHub, Slack, Spotify, Discord — 70 competences integrees + 5 700+ competences communautaires ClawHub. Ajoutez ce dont vous avez besoin ou creez les votres."
         },
         "discord": {
           "title": "Toujours avec vous",
@@ -102,14 +102,14 @@ const fr: Dictionary = {
           "description": "L'integralite du code est ouverte. Verifiez exactement comment l'IA traite vos donnees. Inspectez, modifiez, contribuez. Une difference fondamentale avec les services IA fermes."
         },
         "vision": {
-          "title": "OS de jeu immuable + IA",
-          "description": "Construit sur Bazzite, un OS immuable qui ne casse jamais. Gaming Steam/Proton pret a l'emploi. Sur ce Linux de jeu sur et puissant, votre propre IA vit. Futur : chanter, jouer et creer avec votre IA, jusqu'au Physical AI."
+          "title": "Vision : OS de jeu immuable + IA",
+          "description": "L'objectif : Construit sur Bazzite, un OS immuable qui ne casse jamais. Steam/Proton gaming entierement pret. Sur ce Linux de jeu sur et puissant, votre propre IA vivra — chanter, jouer et creer avec votre IA, jusqu'au Physical AI."
         }
       }
     },
     "comparison": {
       "title": "Pourquoi Naia",
-      "subtitle": "Les autres outils IA sont de simples 'outils'. Naia, c'est 'votre propre IA'.",
+      "subtitle": "Les autres outils IA sont des 'outils' fermes. Naia est une 'votre propre IA' open-source — une vision de l'IA sur un OS gaming.",
       "headers": { "category": "Catégorie", "others": "Autres outils IA", "naia": "Naia" },
       "rows": {
         "ui": { "category": "Philosophie", "others": "Utiliser l'IA comme outil", "naia": "Donner un OS à l'IA. Vivre ensemble." },

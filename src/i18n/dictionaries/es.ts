@@ -86,8 +86,8 @@ const es: Dictionary = {
           "description": "Memoria, personalidad, configuración — todo almacenado en tu máquina. Una IA verdaderamente personal, libre de dependencia de la nube. Imagen USB booteable disponible."
         },
         "skills": {
-          "title": "Codigo Abierto & Extensible",
-          "description": "Apache 2.0 codigo abierto. 70 habilidades integradas + 5.700+ habilidades comunitarias — anade o crea las tuyas. Inspecciona, modifica y personaliza el codigo tu mismo."
+          "title": "70+ Habilidades, Infinitamente Extensible",
+          "description": "Clima, GitHub, Slack, Spotify, Discord — 70 habilidades integradas + 5.700+ habilidades de la comunidad ClawHub. Anade lo que necesites o crea las tuyas."
         },
         "discord": {
           "title": "Siempre contigo",
@@ -102,14 +102,14 @@ const es: Dictionary = {
           "description": "Todo el codigo esta abierto. Verifica exactamente como la IA maneja tus datos. Inspecciona, modifica, contribuye. Una diferencia fundamental con los servicios de IA cerrados."
         },
         "vision": {
-          "title": "SO de juego inmutable + IA",
-          "description": "Construido sobre Bazzite, un SO inmutable que nunca se rompe. Gaming completo con Steam/Proton listo para usar. Sobre este Linux de juego seguro y potente, vive tu propia IA. Futuro: canta, juega y crea con tu IA, hasta llegar al Physical AI."
+          "title": "Vision: SO de juego inmutable + IA",
+          "description": "El objetivo: Construido sobre Bazzite, un SO inmutable que nunca se rompe. Gaming completo con Steam/Proton estara completamente listo. Sobre este Linux de juego seguro y potente, vivira tu propia IA — canta, juega y crea con tu IA, hasta llegar al Physical AI."
         }
       }
     },
     "comparison": {
       "title": "Por qué Naia",
-      "subtitle": "Otras herramientas de IA son solo 'herramientas'. Naia es 'tu propia IA'.",
+      "subtitle": "Otras herramientas de IA son 'herramientas' cerradas. Naia es tu propia IA de codigo abierto — una vision de IA en un OS gaming.",
       "headers": { "category": "Categoría", "others": "Otras herramientas de IA", "naia": "Naia" },
       "rows": {
         "ui": { "category": "Filosofía", "others": "Usar IA como herramienta", "naia": "Darle a la IA el SO. Vivir juntos." },

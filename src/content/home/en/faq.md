@@ -10,6 +10,14 @@ Yes. Naia is an open-source project under the Apache License 2.0. Anyone can ins
 ## Which AI providers are available?
 5 cloud providers (Gemini, Claude, GPT, Grok, zAI) and local AI (Ollama). Cloud AI uses Naia credits for convenience. Local AI (Ollama) is completely free — no credits needed. Local models keep your data on your machine, guaranteeing complete privacy.
 
+## What does a Naia account (cloud service) provide?
+Naia is local-first, but an account gives you:
+- **Credit support** — Use cloud AI via credits when local LLMs aren't feasible for your hardware
+- **Data backup & sync** — Back up your AI's memory, personality, and settings to the cloud and sync across devices
+- **Ecosystem development** — Skill marketplace, avatar sharing, community features, and various development support for the Naia ecosystem
+
+You can use Naia without an account if you only use local AI.
+
 ## How do credits work?
 Credits are deducted per request based on token usage and model pricing. The FREE plan includes a signup bonus and monthly refill. If you use local AI (Ollama), no credits are needed at all.
 

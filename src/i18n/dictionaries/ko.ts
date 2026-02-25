@@ -92,9 +92,9 @@ const ko: Dictionary = {
             "기억, 성격, 설정 모두 내 컴퓨터에 저장됩니다. 클라우드에 종속되지 않는 진짜 개인 AI. USB 부팅 OS 이미지도 제공.",
         },
         skills: {
-          title: "오픈소스 & 무한 확장",
+          title: "70+ 스킬, 무한 확장",
           description:
-            "Apache 2.0 오픈소스. 70개 내장 스킬 + 5,700+ 커뮤니티 스킬을 자유롭게 추가하고, 직접 만들 수도 있습니다. 코드를 확인하고, 수정하고, 커스텀하세요.",
+            "날씨, GitHub, Slack, Spotify, Discord 등 70개 내장 스킬 + ClawHub 5,700+ 커뮤니티 스킬. 원하는 기능을 자유롭게 추가하거나 직접 만들 수 있습니다.",
         },
         discord: {
           title: "언제 어디서나",
@@ -112,15 +112,15 @@ const ko: Dictionary = {
             "코드 전체가 공개되어 있습니다. AI가 내 데이터를 어떻게 다루는지 직접 확인하고, 수정하고, 기여하세요. 폐쇄형 AI 서비스와의 근본적인 차이.",
         },
         vision: {
-          title: "게이밍 불변 OS + AI",
+          title: "미래: 게이밍 OS + AI",
           description:
-            "Bazzite 불변 OS 위에 구축. 시스템이 망가지지 않고, Steam/Proton으로 게임도 됩니다. 이 안전하고 강력한 게이밍 Linux 위에 나만의 AI가 상주합니다. 미래에는 AI와 함께 노래하고, 게임하고, Physical AI(안드로이드 OS)까지.",
+            "목표는 Bazzite 불변 OS 위에 AI를 부여하는 것. 시스템이 망가지지 않는 안전한 Linux에서 Steam/Proton 게이밍까지. 그 위에 나만의 AI가 상주하며, 함께 노래하고 게임하고, 궁극적으로 Physical AI까지 나아갑니다.",
         },
       },
     },
     comparison: {
       title: "왜 Naia인가",
-      subtitle: "기존 AI 도구는 '도구'입니다. Naia는 '나만의 AI'입니다.",
+      subtitle: "기존 AI 도구는 폐쇄된 '도구'입니다. Naia는 오픈소스로 만드는 '나만의 AI'이자, 게이밍 OS 위의 AI 비전입니다.",
       headers: { category: "분류", others: "기존 AI 도구", naia: "Naia" },
       rows: {
         ui: { category: "철학", others: "AI를 도구로 사용", naia: "AI에게 OS를 주고, 함께 산다" },

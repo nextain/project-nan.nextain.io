@@ -86,8 +86,8 @@ const id: Dictionary = {
           "description": "Memori, kepribadian, pengaturan — semua tersimpan di mesin Anda. AI yang benar-benar personal, bebas dari ketergantungan cloud. Image OS USB bootable tersedia."
         },
         "skills": {
-          "title": "Dapat Diperluas Tanpa Batas",
-          "description": "70 keterampilan bawaan + 5.700+ keterampilan komunitas ClawHub. Cuaca, GitHub, Slack, Spotify, Discord — tambahkan apa pun yang Anda butuhkan."
+          "title": "70+ Keterampilan, Dapat Diperluas Tanpa Batas",
+          "description": "Cuaca, GitHub, Slack, Spotify, Discord — 70 keterampilan bawaan + 5.700+ keterampilan komunitas ClawHub. Tambahkan apa yang Anda butuhkan atau buat sendiri."
         },
         "discord": {
           "title": "Selalu Bersama Anda",
@@ -102,14 +102,14 @@ const id: Dictionary = {
           "description": "Seluruh basis kode terbuka. Verifikasi dengan tepat bagaimana AI menangani data Anda. Periksa, modifikasi, kontribusi. Perbedaan mendasar dari layanan AI tertutup."
         },
         "vision": {
-          "title": "OS Gaming Immutable + AI",
-          "description": "Dibangun di atas Bazzite, OS immutable yang tidak pernah rusak. Gaming Steam/Proton langsung siap pakai. Di atas Linux gaming yang aman dan powerful ini, AI Anda sendiri hidup. Masa depan: bernyanyi, bermain game, dan berkarya bersama AI Anda, menuju Physical AI."
+          "title": "Visi: OS Gaming Immutable + AI",
+          "description": "Tujuan: Dibangun di atas Bazzite, OS immutable yang tidak pernah rusak. Gaming Steam/Proton akan sepenuhnya siap. Di atas Linux gaming yang aman dan powerful ini, AI Anda sendiri akan hidup — bernyanyi, bermain game, dan berkarya bersama AI Anda, menuju Physical AI."
         }
       }
     },
     "comparison": {
       "title": "Mengapa Naia",
-      "subtitle": "Alat AI lain hanyalah 'alat'. Naia adalah 'AI milik Anda'.",
+      "subtitle": "Alat AI lain adalah 'alat' tertutup. Naia adalah 'AI milik Anda' yang open-source — sebuah visi AI pada gaming OS.",
       "headers": { "category": "Kategori", "others": "Alat AI Lain", "naia": "Naia" },
       "rows": {
         "ui": { "category": "Filosofi", "others": "Gunakan AI sebagai alat", "naia": "Berikan AI sebuah OS. Hidup bersama." },

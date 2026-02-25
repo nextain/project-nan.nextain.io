@@ -86,8 +86,8 @@ const vi: Dictionary = {
           "description": "Bộ nhớ, tính cách, cài đặt — tất cả lưu trữ trên máy bạn. Một AI thực sự cá nhân, không phụ thuộc đám mây. Có sẵn ảnh USB khởi động."
         },
         "skills": {
-          "title": "Mở rộng vô hạn",
-          "description": "70 kỹ năng tích hợp + 5.700+ kỹ năng cộng đồng ClawHub. Thời tiết, GitHub, Slack, Spotify, Discord — thêm bất cứ thứ gì bạn cần."
+          "title": "70+ Ky Nang, Vo Han Mo Rong",
+          "description": "Thoi tiet, GitHub, Slack, Spotify, Discord — 70 ky nang tich hop + 5.700+ ky nang cong dong ClawHub. Them dieu ban can hoac xay dung cua rieng ban."
         },
         "discord": {
           "title": "Luôn bên bạn",
@@ -102,14 +102,14 @@ const vi: Dictionary = {
           "description": "Toan bo ma nguon duoc cong khai. Xac minh chinh xac cach AI xu ly du lieu cua ban. Kiem tra, chinh sua, dong gop. Mot su khac biet co ban so voi cac dich vu AI dong."
         },
         "vision": {
-          "title": "He dieu hanh game bat bien + AI",
-          "description": "Xay dung tren Bazzite, mot he dieu hanh bat bien khong bao gio hong. Choi game Steam/Proton san sang ngay tu dau. Tren nen tang Linux game an toan va manh me nay, AI cua rieng ban sinh song. Tuong lai: hat, choi game va sang tao cung AI cua ban, huong toi Physical AI."
+          "title": "Tam nhin: He dieu hanh game bat bien + AI",
+          "description": "Muc tieu: Xay dung tren Bazzite, mot he dieu hanh bat bien khong bao gio hong. Choi game Steam/Proton se san sang day du. Tren nen tang Linux game an toan va manh me nay, AI cua rieng ban se sinh song — hat, choi game va sang tao cung AI cua ban, huong toi Physical AI."
         }
       }
     },
     "comparison": {
       "title": "Tại sao chọn Naia",
-      "subtitle": "Các công cụ AI khác chỉ là 'công cụ'. Naia là 'AI của riêng bạn'.",
+      "subtitle": "Các công cụ AI khác chỉ là 'công cụ' kín đóng. Naia là 'AI của riêng bạn' mã nguồn mở — một tầm nhìn AI trên gaming OS.",
       "headers": { "category": "Danh mục", "others": "Công cụ AI khác", "naia": "Naia" },
       "rows": {
         "ui": { "category": "Triết lý", "others": "Dùng AI như công cụ", "naia": "Cho AI hệ điều hành. Sống cùng nhau." },

@@ -86,8 +86,8 @@ const ja: Dictionary = {
           "description": "記憶、性格、設定はすべて自分のPCに保存されます。クラウドに依存しない本当の個人AI。USB起動OSイメージも提供。"
         },
         "skills": {
-          "title": "オープンソース & 無限拡張",
-          "description": "Apache 2.0オープンソース。70個の内蔵スキル + 5,700+コミュニティスキルを自由に追加し、自分で作ることもできます。コードを確認し、修正し、カスタムしましょう。"
+          "title": "70+のスキル、無限の拡張性",
+          "description": "天気、GitHub、Slack、Spotify、Discord — 70個の内蔵スキル + 5,700+のClawHubコミュニティスキル。必要なものを追加するか、独自に構築しましょう。"
         },
         "discord": {
           "title": "いつでもどこでも",
@@ -102,14 +102,14 @@ const ja: Dictionary = {
           "description": "コードベース全体が公開されています。AIがあなたのデータをどう扱うか正確に確認できます。調査し、修正し、貢献しましょう。クローズドなAIサービスとの根本的な違いです。"
         },
         "vision": {
-          "title": "不変のゲーミングOS + AI",
-          "description": "壊れることのない不変OS、Bazziteの上に構築。Steam/Protonゲーミングが最初から使えます。この安全で強力なゲーミングLinuxの上に、あなただけのAIが住んでいます。将来: AIと一緒に歌い、ゲームし、創造する。Physical AIへの道。"
+          "title": "ビジョン: 不変のゲーミングOS + AI",
+          "description": "目標: Bazziteの上で、壊れることのない不変OSを実現。Steam/Protonゲーミングが完全に対応します。この安全で強力なゲーミングLinuxの上に、あなただけのAIが暮らす — 一緒に歌ったり、ゲームしたり、最終的にはPhysical AIへと進化していく。"
         }
       }
     },
     "comparison": {
       "title": "なぜNaiaなのか",
-      "subtitle": "既存のAIツールは「ツール」です。Naiaは「自分だけのAI」です。",
+      "subtitle": "既存のAIツールは閉鎖された「ツール」です。Naiaはオープンソースで作る「自分だけのAI」、ゲーミングOS上のAI構想です。",
       "headers": { "category": "分類", "others": "既存のAIツール", "naia": "Naia" },
       "rows": {
         "ui": { "category": "哲学", "others": "AIをツールとして使う", "naia": "AIにOSを与え、共に暮らす" },

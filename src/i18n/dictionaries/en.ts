@@ -92,9 +92,9 @@ const en: Dictionary = {
             "Memory, personality, settings — all stored on your machine. A truly personal AI, free from cloud dependency. Bootable USB OS image available.",
         },
         skills: {
-          title: "Open Source & Extensible",
+          title: "70+ Skills, Infinitely Extensible",
           description:
-            "Apache 2.0 open source. 70 built-in skills + 5,700+ community skills — add or build your own. Inspect, modify, and customize the code yourself.",
+            "Weather, GitHub, Slack, Spotify, Discord — 70 built-in skills + 5,700+ ClawHub community skills. Add what you need or build your own.",
         },
         discord: {
           title: "Always With You",
@@ -112,15 +112,15 @@ const en: Dictionary = {
             "The entire codebase is open. Verify exactly how AI handles your data. Inspect, modify, contribute. A fundamental difference from closed AI services.",
         },
         vision: {
-          title: "Immutable Gaming OS + AI",
+          title: "Vision: Gaming OS + AI",
           description:
-            "Built on Bazzite, an immutable OS that never breaks. Full Steam/Proton gaming out of the box. On top of this safe, powerful gaming Linux — your own AI lives. Future: sing, game, and create with your AI, all the way to Physical AI.",
+            "The goal: your own AI on Bazzite, an immutable OS that never breaks, with full Steam/Proton gaming. A safe, powerful gaming Linux where your AI lives alongside you — singing, gaming together, and ultimately evolving toward Physical AI.",
         },
       },
     },
     comparison: {
       title: "Why Naia",
-      subtitle: "Other AI tools are just 'tools'. Naia is 'your own AI'.",
+      subtitle: "Other AI tools are closed 'tools'. Naia is an open-source 'your own AI' — a vision of AI living on a gaming OS.",
       headers: { category: "Category", others: "Other AI Tools", naia: "Naia" },
       rows: {
         ui: { category: "Philosophy", others: "Use AI as a tool", naia: "Give AI the OS. Live together." },
