@@ -350,8 +350,8 @@ const ko: Dictionary = {
       flatpak: {
         name: "Flatpak",
         description: "샌드박스 환경에서 실행됩니다. GNOME Platform 런타임이 필요합니다.",
-        command: "flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo\nflatpak install -y flathub org.gnome.Platform//47\nflatpak install --user ./Naia-Shell-x86_64.flatpak",
-        note: "Shell UI만 포함. AI 게이트웨이 미포함.",
+        command: "flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo\nflatpak install -y flathub org.gnome.Platform//49\nflatpak install --user ./Naia-Shell-x86_64.flatpak",
+        note: "Shell + AI 게이트웨이(OpenClaw) 포함. 가장 완전한 패키지.",
       },
       appimage: {
         name: "AppImage",

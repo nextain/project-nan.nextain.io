@@ -352,8 +352,8 @@ const en: Dictionary = {
       flatpak: {
         name: "Flatpak",
         description: "Sandboxed environment. Requires GNOME Platform runtime.",
-        command: "flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo\nflatpak install -y flathub org.gnome.Platform//47\nflatpak install --user ./Naia-Shell-x86_64.flatpak",
-        note: "Shell UI only. AI gateway not included.",
+        command: "flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo\nflatpak install -y flathub org.gnome.Platform//49\nflatpak install --user ./Naia-Shell-x86_64.flatpak",
+        note: "Shell + AI gateway (OpenClaw) included. Most complete package.",
       },
       appimage: {
         name: "AppImage",

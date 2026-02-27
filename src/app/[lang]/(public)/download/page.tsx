@@ -36,6 +36,9 @@ const FORMAT_ICONS = {
   rpm: Download,
 } as const;
 
+/** Formats that have passed verification and are available for download */
+const ENABLED_FORMATS = new Set(["flatpak"]);
+
 
 export default async function DownloadPage({
   params,
@@ -127,10 +130,19 @@ export default async function DownloadPage({
                   </pre>
                   <CopyButton text={fmt.command} />
                 </div>
-                <Button className="w-full" variant="outline" disabled>
-                  <Download className="mr-2 h-4 w-4" />
-                  {fmt.name} — {dict.common.comingSoon}
-                </Button>
+                {ENABLED_FORMATS.has(key) ? (
+                  <Button className="w-full" variant="outline" asChild>
+                    <Link href={DOWNLOAD_URLS[key]} target="_blank" rel="noreferrer">
+                      <Download className="mr-2 h-4 w-4" />
+                      {fmt.name}
+                    </Link>
+                  </Button>
+                ) : (
+                  <Button className="w-full" variant="outline" disabled>
+                    <Download className="mr-2 h-4 w-4" />
+                    {fmt.name} — {dict.common.comingSoon}
+                  </Button>
+                )}
               </CardContent>
             </Card>
           );
