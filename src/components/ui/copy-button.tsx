@@ -11,7 +11,7 @@ export function CopyButton({ text }: { text: string }) {
     <Button
       variant="ghost"
       size="icon"
-      className="absolute right-2 top-2 h-7 w-7 text-muted-foreground hover:text-foreground"
+      className="absolute right-1.5 top-1.5 h-7 w-7 shrink-0 text-muted-foreground hover:text-foreground"
       onClick={() => {
         navigator.clipboard.writeText(text);
         setCopied(true);

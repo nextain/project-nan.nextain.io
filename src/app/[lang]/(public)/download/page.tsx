@@ -124,10 +124,12 @@ export default async function DownloadPage({
                   <Info className="mt-0.5 h-3.5 w-3.5 shrink-0" />
                   {fmt.note}
                 </p>
-                <div className="relative mb-4 overflow-x-auto rounded-md bg-muted/50 p-3 pr-10">
-                  <pre className="text-xs leading-relaxed">
-                    <code>{fmt.command}</code>
-                  </pre>
+                <div className="relative mb-4 rounded-md bg-muted/50 p-3">
+                  <div className="overflow-x-auto pr-8">
+                    <pre className="text-xs leading-relaxed">
+                      <code>{fmt.command}</code>
+                    </pre>
+                  </div>
                   <CopyButton text={fmt.command} />
                 </div>
                 {ENABLED_FORMATS.has(key) ? (
@@ -203,8 +205,10 @@ export default async function DownloadPage({
         <p className="mb-3 text-sm text-muted-foreground">
           {d.checksumDescription}
         </p>
-        <div className="relative rounded-md bg-muted/50 p-3 pr-10">
-          <code className="text-xs">sha256sum -c SHA256SUMS</code>
+        <div className="relative rounded-md bg-muted/50 p-3">
+          <div className="overflow-x-auto pr-8">
+            <code className="text-xs">sha256sum -c SHA256SUMS</code>
+          </div>
           <CopyButton text="sha256sum -c SHA256SUMS" />
         </div>
       </div>
