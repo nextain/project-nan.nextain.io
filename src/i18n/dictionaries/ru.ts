@@ -40,7 +40,8 @@ const ru: Dictionary = {
       "terms": "Условия использования",
       "refund": "Политика возврата",
       "contact": "Контакт",
-      "about": "О Nextain"
+      "about": "О Nextain",
+      "donation": "Пожертвовать"
     },
     "copyright": "© 2026 Некстейн. Все права защищены."
   },
@@ -314,7 +315,8 @@ const ru: Dictionary = {
       "settings": "Настройки",
       "tools": "Детали инструмента",
       "naiaAccount": "Аккаунт Naia",
-      "troubleshooting": "Устранение неполадок"
+      "troubleshooting": "Устранение неполадок",
+      "openSource": "Использование и вклад в открытый код"
     }
   },
   "download": {

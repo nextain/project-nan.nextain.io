@@ -19,6 +19,7 @@ export const MANUAL_SLUGS = [
   "tools",
   "naia-account",
   "troubleshooting",
+  "open-source",
 ] as const;
 
 export type ManualSlug = (typeof MANUAL_SLUGS)[number];
@@ -72,4 +73,5 @@ export const SLUG_TO_SECTION_KEY: Record<ManualSlug, string> = {
   tools: "tools",
   "naia-account": "naiaAccount",
   troubleshooting: "troubleshooting",
+  "open-source": "openSource",
 };

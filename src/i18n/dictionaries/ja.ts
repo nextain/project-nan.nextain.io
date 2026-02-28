@@ -40,7 +40,8 @@ const ja: Dictionary = {
       "terms": "利用規約",
       "refund": "返金ポリシー",
       "contact": "お問い合わせ",
-      "about": "会社概要"
+      "about": "会社概要",
+      "donation": "寄付"
     },
     "copyright": "© 2026 ネクストイン.無断転載を禁じます。"
   },
@@ -314,7 +315,8 @@ const ja: Dictionary = {
       "settings": "設定",
       "tools": "ツールの詳細",
       "naiaAccount": "Naia アカウント",
-      "troubleshooting": "トラブルシューティング"
+      "troubleshooting": "トラブルシューティング",
+      "openSource": "オープンソースの活用と貢献"
     }
   },
   "download": {

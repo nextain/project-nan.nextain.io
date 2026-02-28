@@ -40,7 +40,8 @@ const de: Dictionary = {
       "terms": "Nutzungsbedingungen",
       "refund": "Rückerstattungsrichtlinie",
       "contact": "Kontakt",
-      "about": "Über Nextain"
+      "about": "Über Nextain",
+      "donation": "Spenden"
     },
     "copyright": "© 2026 Nextain. Alle Rechte vorbehalten."
   },
@@ -314,7 +315,8 @@ const de: Dictionary = {
       "settings": "Einstellungen",
       "tools": "Werkzeugdetails",
       "naiaAccount": "Naia-Konto",
-      "troubleshooting": "Fehlerbehebung"
+      "troubleshooting": "Fehlerbehebung",
+      "openSource": "Open-Source-Nutzung und Beitrag"
     }
   },
   "download": {

@@ -40,7 +40,8 @@ const hi: Dictionary = {
       "terms": "सेवा की शर्तें",
       "refund": "धनवापसी नीति",
       "contact": "संपर्क करें",
-      "about": "Nextain के बारे में"
+      "about": "Nextain के बारे में",
+      "donation": "दान करें"
     },
     "copyright": "© 2026 नेक्स्टैन। सर्वाधिकार सुरक्षित।"
   },
@@ -314,7 +315,8 @@ const hi: Dictionary = {
       "settings": "सेटिंग्स",
       "tools": "उपकरण विवरण",
       "naiaAccount": "Naia खाता",
-      "troubleshooting": "समस्या निवारण"
+      "troubleshooting": "समस्या निवारण",
+      "openSource": "ओपन सोर्स उपयोग और योगदान"
     }
   },
   "download": {

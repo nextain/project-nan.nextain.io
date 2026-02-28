@@ -41,6 +41,7 @@ const en: Dictionary = {
       refund: "Refund Policy",
       contact: "Contact",
       about: "About Nextain",
+      donation: "Donate",
     },
     copyright: "© 2026 Nextain (Next AI Networks). All rights reserved.",
   },
@@ -328,6 +329,7 @@ const en: Dictionary = {
       tools: "Tool Details",
       naiaAccount: "Naia Account",
       troubleshooting: "Troubleshooting",
+      openSource: "Open Source Usage & Contribution",
     },
   },
   download: {

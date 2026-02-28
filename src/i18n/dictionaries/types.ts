@@ -41,6 +41,7 @@ export interface Dictionary {
       refund: string;
       contact: string;
       about: string;
+      donation: string;
     };
     copyright: string;
   };
@@ -273,6 +274,7 @@ export interface Dictionary {
       tools: string;
       naiaAccount: string;
       troubleshooting: string;
+      openSource: string;
     };
   };
   download: {

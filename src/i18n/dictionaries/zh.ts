@@ -40,7 +40,8 @@ const zh: Dictionary = {
       "terms": "服务条款",
       "refund": "退款政策",
       "contact": "联系方式",
-      "about": "关于 Nextain"
+      "about": "关于 Nextain",
+      "donation": "捐赠"
     },
     "copyright": "© 2026 Nextain。版权所有。"
   },
@@ -314,7 +315,8 @@ const zh: Dictionary = {
       "settings": "设置",
       "tools": "工具详情",
       "naiaAccount": "Naia 账号",
-      "troubleshooting": "故障排除"
+      "troubleshooting": "故障排除",
+      "openSource": "开源使用与贡献"
     }
   },
   "download": {

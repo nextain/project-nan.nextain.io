@@ -40,7 +40,8 @@ const ar: Dictionary = {
       "terms": "شروط الخدمة",
       "refund": "سياسة استرداد الأموال",
       "contact": "الاتصال",
-      "about": "عن Nextain"
+      "about": "عن Nextain",
+      "donation": "تبرع"
     },
     "copyright": "© 2026 نكستين. جميع الحقوق محفوظة."
   },
@@ -314,7 +315,8 @@ const ar: Dictionary = {
       "settings": "الإعدادات",
       "tools": "تفاصيل الأداة",
       "naiaAccount": "حساب Naia",
-      "troubleshooting": "استكشاف الأخطاء وإصلاحها"
+      "troubleshooting": "استكشاف الأخطاء وإصلاحها",
+      "openSource": "استخدام المصادر المفتوحة والمساهمة فيها"
     }
   },
   "download": {

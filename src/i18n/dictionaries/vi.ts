@@ -40,7 +40,8 @@ const vi: Dictionary = {
       "terms": "Điều khoản dịch vụ",
       "refund": "Chính sách hoàn tiền",
       "contact": "Liên hệ",
-      "about": "Về Nextain"
+      "about": "Về Nextain",
+      "donation": "Quyên góp"
     },
     "copyright": "© 2026 Nextain. Mọi quyền được bảo lưu."
   },
@@ -314,7 +315,8 @@ const vi: Dictionary = {
       "settings": "Cài đặt",
       "tools": "Chi tiết công cụ",
       "naiaAccount": "Tài khoản Naia",
-      "troubleshooting": "Khắc phục sự cố"
+      "troubleshooting": "Khắc phục sự cố",
+      "openSource": "Sử dụng và đóng góp mã nguồn mở"
     }
   },
   "download": {

@@ -41,6 +41,7 @@ const ko: Dictionary = {
       refund: "환불 정책",
       contact: "문의",
       about: "회사 소개",
+      donation: "후원",
     },
     copyright: "© 2026 Nextain (Next AI Networks). All rights reserved.",
   },
@@ -326,6 +327,7 @@ const ko: Dictionary = {
       tools: "도구 상세",
       naiaAccount: "Naia 계정",
       troubleshooting: "문제 해결",
+      openSource: "오픈소스 활용 및 기여",
     },
   },
   download: {

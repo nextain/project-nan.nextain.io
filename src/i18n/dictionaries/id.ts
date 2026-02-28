@@ -40,7 +40,8 @@ const id: Dictionary = {
       "terms": "Ketentuan Layanan",
       "refund": "Kebijakan Pengembalian Dana",
       "contact": "Kontak",
-      "about": "Tentang Nextain"
+      "about": "Tentang Nextain",
+      "donation": "Donasi"
     },
     "copyright": "© 2026 Selanjutnya. Semua hak dilindungi undang-undang."
   },
@@ -314,7 +315,8 @@ const id: Dictionary = {
       "settings": "Pengaturan",
       "tools": "Detail Alat",
       "naiaAccount": "Akun Naia",
-      "troubleshooting": "Pemecahan masalah"
+      "troubleshooting": "Pemecahan masalah",
+      "openSource": "Penggunaan dan kontribusi sumber terbuka"
     }
   },
   "download": {

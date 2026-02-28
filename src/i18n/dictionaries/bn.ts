@@ -40,7 +40,8 @@ const bn: Dictionary = {
       "terms": "পরিষেবার শর্তাবলী",
       "refund": "ফেরত নীতি",
       "contact": "যোগাযোগ",
-      "about": "Nextain সম্পর্কে"
+      "about": "Nextain সম্পর্কে",
+      "donation": "দান করুন"
     },
     "copyright": "© 2026 Nextain. সর্বস্বত্ব সংরক্ষিত"
   },
@@ -314,7 +315,8 @@ const bn: Dictionary = {
       "settings": "সেটিংস",
       "tools": "টুলের বিবরণ",
       "naiaAccount": "Naia অ্যাকাউন্ট",
-      "troubleshooting": "সমস্যা সমাধান"
+      "troubleshooting": "সমস্যা সমাধান",
+      "openSource": "ওপেন সোর্স ব্যবহার ও অবদান"
     }
   },
   "download": {
